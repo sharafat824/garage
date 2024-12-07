@@ -23,6 +23,7 @@ use App\BranchSetting;
 use App\AccountTaxRate;
 use App\tbl_service_pros;
 use App\CheckoutCategory;
+use App\OtherServices;
 use Illuminate\Http\Request;
 use App\tbl_checkout_results;
 use Illuminate\Support\Facades\Gate;
@@ -702,30 +703,43 @@ class JobCardcontroller extends Controller
 
 	// add products
 	public function addproducts(Request $request)
-	{
-		$id = $request->row_id;
-		$ids = $id + 1;
-		$rowid = 'row_id_' . $ids;
-?>
+{
+    $products = OtherServices::get();
+    $id = $request->row_id;
+    $ids = $id + 1;
+    $rowid = 'row_id_' . $ids;
+    ?>
+    
+    <tr id="<?php echo $rowid; ?>">
+        <td>
+            <!-- Replace input with a select dropdown -->
+            <select name="other_product[]" class="form-control other_service" data-row-id="<?php echo $rowid; ?>">
+                <option value="">Select a service</option>
+                <!-- Dynamically generate options for each product -->
+                <?php foreach ($products as $product) : ?>
+                    <option value="<?php echo $product->id; ?>" data-price="<?php echo $product->total_price; ?>">
+                        <?php echo $product->name; ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </td>
 
-		<tr id="<?php echo $rowid; ?>">
-			<td>
-				<input type="text" name="other_product[]" class="form-control" maxlength="50">
-			</td>
+        <td>
+            <input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+        </td>
 
-			<td>
-				<input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price" value="<?php if (!empty($pros)) {
-																															echo $product->total_price;
-																														} ?>" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
-			</td>
+        <td class="text-center">
+            <span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
+                <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+            </span>
+        </td>
+    </tr>
 
-			<td class="text-center">
-				<span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>"><i class="fa fa-trash fa-2x" aria-hidden="true"></i>
-				</span>
-			</td>
-		</tr>
 <?php
-	}
+}
+
+	
+
 
 	// price of product
 	public function getprice(Request $request)

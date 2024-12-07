@@ -547,10 +547,10 @@ $currentRoute = str_replace($baseUrl, "", $currentUrl);
                 @endcanany
 
                 @php
-                $inventoryRoutes = ['/service/list','/service/add'];
+                $inventoryRoutes = ['/other/service/list','/other/service/add'];
                 @endphp
                 @can('service_view')
-                <li class="{{ in_array($currentRoute, $inventoryRoutes) || Str::startsWith($currentRoute, '/service/list/') ? 'active' : '' }}"><a href="{!! url('/service/list') !!}"><i class="fa-solid fa-wrench"></i>{{ trans('message.Services') }}</a></li>
+                <li class="{{ in_array($currentRoute, $inventoryRoutes) || Str::startsWith($currentRoute, '/other/service/list/') ? 'active' : '' }}"><a href="{!! url('/other/service/list') !!}"><i class="fa-solid fa-wrench"></i>{{ trans('message.Services') }}</a></li>
                 @endcan
 
                 @php

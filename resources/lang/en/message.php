@@ -1953,6 +1953,10 @@ return [
 	
 	"Full Name"  =>"Full Name",
 	"Enter Full Name" => "Enter Full Name",
+	"Other Services" => "Other Services",
+	"Cylinder" => "Cylinder",
+	"Short Description" => "Short Description",
+
 
 ];
 // English en

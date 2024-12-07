@@ -447,7 +447,7 @@
                                         <table class="table table-bordered addtaxtype" id="tab_products_detail" align="center">
                                             <thead>
                                                 <tr>
-                                                    <th class="all">{{ trans('message.Product') }}</th>
+                                                    <th class="all">{{ trans('message.Service') }}</th>
                                                     <th class="all">{{ trans('message.Price') }}
                                                         (<?php echo getCurrencySymbols(); ?>)
                                                     </th>
@@ -921,6 +921,7 @@
                 success: function(response) {
                     $("#tab_products_detail > tbody").append(response);
                     $("#add_new_product").prop('disabled', false);
+                    $(".other_service").select2();
                     return false;
                 },
                 error: function(e) {
@@ -928,6 +929,30 @@
                 }
             });
         });
+
+        $(document).on('change', 'select[name="other_product[]"]', function() {
+            var productId = $(this).val();
+            var row = $(this).closest('tr'); // Get the row of the current product
+            var priceField = row.find('.other_service_price'); // Find the price field in this row
+
+            if (productId) {
+                $.ajax({
+                    url: '/service/price/'+productId, // Define the URL that will return the product price
+                    method: 'GET',
+                    data: {
+                        id: productId
+                    },
+                    success: function(response) {
+                        // Assuming the response is the price of the product
+                        priceField.val(response.price);
+                    }
+                });
+            } else {
+                priceField.val(''); // Clear price field if no product is selected
+            }
+        });
+
+
 
         $('body').on('click', '.trash_product', function() {
 
