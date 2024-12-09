@@ -245,7 +245,6 @@ class JobCardcontroller extends Controller
 		if (isAdmin(Auth::User()->role_id)) {
 			$branchDatas = Branch::where('soft_delete', '=', 0)->get();
 			$employee = DB::table('users')->where([['role', 'employee'], ['soft_delete', 0], ['branch_id', $adminCurrentBranch->branch_id]])->get()->toArray();
-		
 		} elseif (getUsersRole(Auth::user()->role_id) == 'Customer') {
 			$branchDatas = Branch::where('soft_delete', '=', 0)->get();
 			$employee = DB::table('users')->where([['role', 'employee'], ['soft_delete', 0]])->get()->toArray();
@@ -253,10 +252,10 @@ class JobCardcontroller extends Controller
 			$branchDatas = Branch::where('id', $currentUser->branch_id)->where('soft_delete', '=', 0)->get();
 			$employee = DB::table('users')->where([['role', 'employee'], ['soft_delete', 0], ['branch_id', $currentUser->branch_id]])->get()->toArray();
 		}
-	
+
 		$repairCategoryList = DB::table('table_repair_category')->where([['soft_delete', "=", 0]])->get()->toArray();
 		$setting = BranchSetting::first();
-		return view('jobcard.add', compact('employee', 'customer', 'code', 'country', 'onlycustomer', 'vehical_brand', 'vehical_type', 'fuel_type', 'color', 'model_name', 'tbl_custom_fields', 'branchDatas', 'repairCategoryList','setting'));
+		return view('jobcard.add', compact('employee', 'customer', 'code', 'country', 'onlycustomer', 'vehical_brand', 'vehical_type', 'fuel_type', 'color', 'model_name', 'tbl_custom_fields', 'branchDatas', 'repairCategoryList', 'setting'));
 	}
 
 	//getpass invoices/receipt 
@@ -277,9 +276,7 @@ class JobCardcontroller extends Controller
 	}
 
 	//total stock in product
-	public function stocktotal()
-	{
-	}
+	public function stocktotal() {}
 
 	//select checkpoints
 	public function select_checkpt(Request $request)
@@ -702,18 +699,18 @@ class JobCardcontroller extends Controller
 	}
 
 	// add products
-	public function addproducts(Request $request)
+	public function addService(Request $request)
 	{
 		$products = OtherServices::get();
 		$id = $request->row_id;
 		$ids = $id + 1;
 		$rowid = 'row_id_' . $ids;
-		?>
-	
+?>
+
 		<tr id="<?php echo $rowid; ?>">
 			<td>
 				<!-- Replace input with a select dropdown -->
-				<select name="other_product[]" class="form-control other_service" data-row-id="<?php echo $rowid; ?>">
+				<select name="other_service_name[]" class="form-control other_service_name" data-row-id="<?php echo $rowid; ?>">
 					<option value="">Select a service</option>
 					<!-- Dynamically generate options for each product -->
 					<?php foreach ($products as $product) : ?>
@@ -726,31 +723,69 @@ class JobCardcontroller extends Controller
 
 			<!-- New column for Short Description -->
 			<td>
-				<input type="text" name="short_description[]" class="form-control other_service_description" id="oth_desc_<?php echo $ids; ?>" value="" maxlength="255">
-			</td>
-	
-			<!-- New column for Cylinder -->
-			<td>
-				<input type="text" name="cylinder[]" class="form-control other_service_cylinder" id="oth_cyl_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
-			</td>
-	
-			<td>
-				<input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+				<input type="text" name="other_short_desc[]" class="form-control other_short_desc" id="other_short_desc_<?php echo $ids; ?>" value="" maxlength="255">
 			</td>
 
-	
+			<!-- New column for Cylinder -->
+			<td>
+				<input type="text" name="other_service_cylinder[]" class="form-control other_service_cylinder" id="other_service_cylinder_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+			</td>
+
+			<td>
+				<input type="text" name="other_service_price[]" class="form-control other_service_price" id="other_service_price_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+			</td>
+
+
 			<td class="text-center">
 				<span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
 					<i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 				</span>
 			</td>
 		</tr>
-	
-		<?php
-	}
-	
 
-	
+	<?php
+	}
+
+
+	public function addproducts(Request $request)
+	{
+		$currentUser = User::where([['soft_delete', 0], ['id', '=', Auth::User()->id]])->orderBy('id', 'DESC')->first();
+		$products = DB::table('tbl_products')->where([['soft_delete', 0], ['branch_id', $currentUser->branch_id]])->get()->toArray();
+
+		$id = $request->row_id;
+		$ids = $id + 1;
+		$rowid = 'row_id_' . $ids;
+	?>
+
+		<tr id="<?php echo $rowid; ?>">
+			<td>
+				<!-- <input type="text" name="other_product[]" class="form-control" maxlength="50"> -->
+				<!-- Replace input with a select dropdown -->
+				<select name="other_product[]" class="form-control other_product" data-row-id="<?php echo $rowid; ?>">
+					<option value="">Select a product</option>
+					<!-- Dynamically generate options for each product -->
+					<?php foreach ($products as $product) : ?>
+						<option value="<?php echo $product->id; ?>" data-price="<?php echo $product->price; ?>">
+							<?php echo $product->name; ?>
+						</option>
+					<?php endforeach; ?>
+				</select>
+			</td>
+
+			<td>
+				<input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price" value="<?php if (!empty($pros)) {
+																															echo $product->total_price;
+																														} ?>" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+			</td>
+
+			<td class="text-center">
+				<span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>"><i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+				</span>
+			</td>
+		</tr>
+<?php
+	}
+
 
 
 	// price of product
@@ -770,6 +805,11 @@ class JobCardcontroller extends Controller
 		} else {
 			return 0;
 		}
+	}
+	
+
+	public function getproductprice(Request $request)  {
+		
 	}
 
 	// get total price for product
@@ -927,7 +967,7 @@ class JobCardcontroller extends Controller
 		$paid_amount = null;
 		$serviceid = $request->serviceid;
 		$job_no = $request->job_no;
-		
+
 		$tbl_services = Service::where('job_no', '=', $job_no)->first();
 		// dd($job_no);
 		$c_id = $tbl_services->customer_id;

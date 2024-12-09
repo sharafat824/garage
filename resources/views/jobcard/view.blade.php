@@ -375,7 +375,7 @@
                                                                     <td>
                                                                         <select name="product2[product_id][]" class="form-control product_ids product1s_{{ $i }} form-select" url="{{ url('/jobcard/getprice') }}" row_did="{{ $i }}" id="product1s_{{ $i }}" qtyappend="">
                                                                             <option value="">
-                                                                                {{ trans('message.Select Product') }}
+                                                                                {{ trans('message.Select  ') }}
                                                                             </option>
                                                                             <?php foreach ($product as $products) {
                                                                                 if ($products->id == $datas->product_id) {
@@ -438,7 +438,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-10 col-lg-10 col-xl-10 col-xxl-10 col-sm-10 col-xs-10">
-                                    <h2 class="fw-bold mt-0">{{ trans('message.Other Service Charges') }}
+                                    <h2 class="fw-bold mt-0">{{ trans('message.Other Product Service Charges') }}
                                         <button type="button" id="add_new_product" class="btn btn-outline-secondary mt-0 ms-1" url="{!! url('/jobcard/addproducts') !!}"> + </button>
                                     </h2>
                                 </div>
@@ -447,9 +447,7 @@
                                         <table class="table table-bordered addtaxtype" id="tab_products_detail" align="center">
                                             <thead>
                                                 <tr>
-                                                    <th class="all">{{ trans('message.Service') }}</th>
-                                                    <th class="all">{{ trans('message.Short Description') }}</th>
-                                                    <th class="all">{{ trans('message.Cylinder') }}</th> 
+                                                    <th class="all">{{ trans('message.Product') }}</th>
                                                     <th class="all">{{ trans('message.Price') }}
                                                         (<?php echo getCurrencySymbols(); ?>)
                                                     </th>
@@ -469,6 +467,55 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <span class="trash_product" style="cursor: pointer;" data-id="<?php echo $id; ?>"><i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <?php $id++; ?>
+                                                @endforeach
+                                                @endif
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 col-lg-10 col-xl-10 col-xxl-10 col-sm-10 col-xs-10">
+                                    <h2 class="fw-bold mt-0">{{ trans('message.Other Service Charges') }}
+                                        <button type="button" id="add_new_service" class="btn btn-outline-secondary mt-0 ms-1" url="{!! url('/jobcard/addService') !!}"> + </button>
+                                    </h2>
+                                </div>
+                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered addtaxtype" id="tab_services_detail" align="center">
+                                            <thead>
+                                                <tr>
+                                                    <th class="all">{{ trans('message.Service') }}</th>
+                                                    <th class="all">{{ trans('message.Short Description') }}</th>
+                                                    <th class="all">{{ trans('message.Cylinder') }}</th>
+                                                    <th class="all">{{ trans('message.Price') }}
+                                                        (<?php echo getCurrencySymbols(); ?>)
+                                                    </th>
+                                                    <th>{{ trans('message.Action') }}</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @if (!empty($serices) && isset($serices))
+                                                <?php $id = 1; ?>
+                                                @foreach ($services as $service)
+                                                <tr id="<?php echo 'row_service_id_' . $id; ?>">
+                                                    <td>
+                                                        <input type="text" name="other_service_name[]" class="form-control other_service_name<?php echo $id; ?>" value="<?php echo $service?->name; ?>" id="other_service_name<?php echo $id; ?>" other_service_name="<?php echo $service->id; ?>" maxlength="250">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="other_short_desc[]" class="form-control other_short_desc other_service_description<?php echo $id; ?>" value="<?php echo $service?->short_description; ?>" id="other_short_desc_<?php echo $id; ?>" maxlength="250">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="other_service_cylinder[]" class="form-control other_service_cylinder_<?php echo $id; ?>" value="<?php echo $service?->cylinder; ?>" id="othr_service_cylinder_<?php echo $id; ?>" maxlength="250">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="other_service_price[]" class="form-control other_service_price other_service_price_<?php echo $id; ?>" id="oth_service_price" value="<?php echo $service->price; ?>" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <span class="trash_service" style="cursor: pointer;" data-id="<?php echo $id; ?>"><i class="fa fa-trash fa-2x" aria-hidden="true"></i>
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -923,7 +970,6 @@
                 success: function(response) {
                     $("#tab_products_detail > tbody").append(response);
                     $("#add_new_product").prop('disabled', false);
-                    $(".other_service").select2();
                     return false;
                 },
                 error: function(e) {
@@ -931,33 +977,6 @@
                 }
             });
         });
-
-        $(document).on('change', 'select[name="other_product[]"]', function() {
-            var productId = $(this).val();
-            var row = $(this).closest('tr'); // Get the row of the current product
-            var priceField = row.find('.other_service_price'); 
-            var shortDesc = row.find('.other_service_description');
-            var cylinder = row.find('.other_service_cylinder');
-
-            if (productId) {
-                $.ajax({
-                    url: '/service/price/'+productId, // Define the URL that will return the product price
-                    method: 'GET',
-                    data: {
-                        id: productId
-                    },
-                    success: function(response) {
-                        shortDesc.val(response.short_description);
-                        cylinder.val(response.cylinder);
-                        priceField.val(response.price);
-                    }
-                });
-            } else {
-                priceField.val(''); // Clear price field if no product is selected
-            }
-        });
-
-
 
         $('body').on('click', '.trash_product', function() {
 
@@ -988,6 +1007,65 @@
                 }
             });
         });
+        $("#add_new_service").click(function() {
+
+            var row_id = $("#tab_services_detail > tbody > tr").length;
+            console.log(row_id);
+            var url = $(this).attr('url');
+
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: {
+                    row_id: row_id
+                },
+                beforeSend: function() {
+                    $("#add_new_service").prop('disabled', true);
+                },
+                success: function(response) {
+                    $("#tab_services_detail > tbody").append(response);
+                    $("#add_new_service").prop('disabled', false);
+                    return false;
+                },
+                error: function(e) {
+
+                }
+            });
+        });
+
+        $('body').on('click', '.trash_service', function() {
+
+            var row_id = $(this).attr('data-id');
+
+            $('table#tab_services_detail tr#row_service_id_' + row_id).fadeOut();
+            return false;
+        });
+
+        $(document).on('change', 'select[name="other_service_name[]"]', function() {
+            var productId = $(this).val();
+            var row = $(this).closest('tr'); // Get the row of the current product
+            var priceField = row.find('.other_service_price');
+            var shortDesc = row.find('.other_short_desc');
+            var cylinder = row.find('.other_service_cylinder');
+
+            if (productId) {
+                $.ajax({
+                    url: '/service/price/' + productId, // Define the URL that will return the product price
+                    method: 'GET',
+                    data: {
+                        id: productId
+                    },
+                    success: function(response) {
+                        shortDesc.val(response.short_description);
+                        cylinder.val(response.cylinder);
+                        priceField.val(response.price);
+                    }
+                });
+            } else {
+                priceField.val(''); // Clear price field if no product is selected
+            }
+        });
+
 
         $('body').on('keyup', '.qty', function() {
 
