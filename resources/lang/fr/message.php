@@ -1954,7 +1954,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Veuillez mettre à jour le système avec la dernière version pour continuer. Veuillez cliquer sur le bouton <strong>Installer la mise à jour</strong> pour démarrer le processus de mise à jour.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Nous vous recommandons</strong> d'effectuer d'abord la <strong>sauvegarde de la base de données et des fichiers</strong> avant de mettre à jour vers la nouvelle version.",
 	"I have taken a backup of the database and files." => "J'ai fait une sauvegarde de la base de données et des fichiers.",
-
+    "Short Description" => "Courte description",
+    "Cylinder" => "Cylindre",
+	"Other Product Service Charges"=> "Autres frais de service du produit",
 ];
  
 	// french / fr

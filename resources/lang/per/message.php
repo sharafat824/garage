@@ -1939,6 +1939,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "لطفاً برای ادامه، سیستم را به آخرین نسخه به روز کنید. لطفاً روی دکمه <strong>نصب به‌روزرسانی</strong> کلیک کنید تا فرآیند به‌روزرسانی آغاز شود.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> توصیه می‌کنیم</strong> قبل از به‌روزرسانی به نسخه جدید، ابتدا از <strong>پایگاه داده و فایل</strong> نسخه پشتیبان تهیه کنید.",
 	"I have taken a backup of the database and files." => "من از دیتابیس و فایل ها بک آپ گرفته ام.",
-
+    "Short Description" => "توضیح مختصر",
+    "Cylinder" => "سیلندر",
+    "Other Product Service Charges" => "هزینه‌های خدمات محصول دیگر",
 ];
 	// Persian/per

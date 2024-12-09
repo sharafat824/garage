@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "जारी राख्नको लागि कृपया प्रणालीलाई नवीनतम संस्करणमा अद्यावधिक गर्नुहोस्। अपडेट प्रक्रिया सुरु गर्न कृपया <strong>अपडेट स्थापना गर्नुहोस्</strong> बटनमा क्लिक गर्नुहोस्।",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> हामी सिफारिस गर्छौं</strong> कि तपाईंले नयाँ संस्करणमा अद्यावधिक गर्नु अघि पहिले <strong>डेटाबेस र फाइल</strong> ब्याकअप लिनुहोस्।",
         "I have taken a backup of the database and files." => "मैले डाटाबेस र फाइलहरूको ब्याकअप लिएको छु।",
+        "Short Description" => "संक्षिप्त विवरण",
+        "Cylinder" => "सिलिन्डर",
+        "Other Product Service Charges" => "अन्य उत्पादन सेवा शुल्क",
 ];
 // Nepali nep

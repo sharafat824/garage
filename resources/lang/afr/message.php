@@ -1606,6 +1606,10 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Dateer asseblief die stelsel op na die nuutste weergawe om voort te gaan. Klik asseblief op die <strong>Installeer opdatering</strong>-knoppie om die opdateringsproses te begin.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Ons beveel aan</strong> dat jy eers die <strong>databasis en lêer</strong>-rugsteun neem voordat jy na die nuwe weergawe opdateer.",
         "I have taken a backup of the database and files." => "Ek het 'n rugsteun van die databasis en lêers geneem.",
+          "Short Description" => "Kort Beskrywing",
+        "Cylinder" => "Silinder",
+	"Other Product Service Charges" => "Ander produkdiensfooie",
+
 
 ];
 // Afrikaans afr

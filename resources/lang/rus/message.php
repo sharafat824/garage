@@ -1939,5 +1939,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Пожалуйста, обновите систему до последней версии, чтобы продолжить. Нажмите кнопку <strong>Установить обновление</strong>, чтобы начать процесс обновления.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Мы рекомендуем</strong> сначала создать резервную копию <strong>базы данных и файлов</strong> перед обновлением до новой версии.",
 	"I have taken a backup of the database and files." => "Я сделал резервную копию базы данных и файлов.",
+	"Short Description" => "Краткое описание",
+    "Cylinder" => "Цилиндр",
+    "Other Product Service Charges" => "Прочие сборы за услуги продукта",
 ];
 	// Russian rus

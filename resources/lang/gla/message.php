@@ -1602,6 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Feuch an ùraich thu an siostam chun an tionndadh as ùire gus leantainn air adhart. Briog air a' phutan <strong>Stàlaich an t-ùrachadh</strong> gus am pròiseas ùrachaidh a thòiseachadh.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Mholamaid</strong> gun gabh thu lethbhreac-glèidhidh <strong>stòr-dàta & faidhle</strong> an toiseach mus ùraich thu dhan tionndadh ùr.",
         "I have taken a backup of the database and files." => "Tha mi air lethbhreac-glèidhidh a dhèanamh den stòr-dàta agus faidhlichean.",
-
+        "Short Description" => "Tuairisgeul goirid",
+        "Cylinder" => "Silindair",
+        "Other Product Service Charges" => "Cosgaisean seirbheis toraidh eile",
 ];
 // Scots Gaelic gla

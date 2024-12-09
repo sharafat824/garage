@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "مھرباني ڪري جاري رکڻ لاءِ سسٽم کي جديد ورزن تائين اپڊيٽ ڪريو. مھرباني ڪري ڪلڪ ڪريو <strong>اپڊيٽ انسٽال ڪريو</strong> بٽڻ تي تازه ڪاري جي عمل کي شروع ڪرڻ لاء.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> اسان سفارش ڪريون ٿا</strong> ته توھان وٺو <strong>ڊيٽابيس ۽ فائل</strong> جو بيڪ اپ پهرين نئين ورزن ۾ اپڊيٽ ڪرڻ کان اڳ.",
         "I have taken a backup of the database and files." => "مون ڊيٽابيس ۽ فائلن جو بيڪ اپ ورتو آهي.",
+        "Short Description" => "مختصر وضاحت",
+        "Cylinder" => "سيلنڈر",
+        "Other Product Service Charges" => "ٻين پراڊڪٽ سروس چارجز",
 ];
 // Sindhi snd

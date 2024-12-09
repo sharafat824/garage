@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Улантуу үчүн системаны эң акыркы версияга жаңыртыңыз. Сураныч, жаңыртуу процессин баштоо үчүн <strong>Жаңыртууну орнотуу</strong> баскычын басыңыз.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Биз</strong> жаңы версияга жаңыртуудан мурун <strong>маалымат базасынын жана файлдын</strong> камдык көчүрмөсүн алууну сунуштайбыз.",
         "I have taken a backup of the database and files." => "Мен базанын жана файлдардын камдык көчүрмөсүн алдым.",
+        "Short Description" => "Ibisobanuro Bifupi",
+        "Cylinder" => "Silindiri",
+        "Other Product Service Charges" => "Ibigurwa vy'inyongera ku bicuruzwa",
 ];
 // Kyrgyz kir

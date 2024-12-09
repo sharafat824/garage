@@ -1939,6 +1939,11 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Jätkamiseks värskendage süsteem uusimale versioonile. Värskendusprotsessi alustamiseks klõpsake nupul <strong>Installi värskendus</strong>.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Soovitame</strong> enne uuele versioonile värskendamist teha <strong>andmebaasi ja faili</strong> varukoopia.",
 	"I have taken a backup of the database and files." => "Tegin andmebaasist ja failidest varukoopia.",
+	"Short Description" => "Lühikirjeldus",
+    "Cylinder" => "Tsüliinder",
+	"Other Product Service Charges" =>"Muut toote teenustasud"
+
+	
 
 ];
 	// Estonian/et

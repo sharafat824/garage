@@ -1602,6 +1602,9 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Lai turpinātu, lūdzu, atjauniniet sistēmu uz jaunāko versiju. Lūdzu, noklikšķiniet uz pogas <strong>Instalēt atjauninājumu</strong>, lai sāktu atjaunināšanas procesu.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Iesakām</strong> pirms atjaunināšanas uz jauno versiju dublēt <strong>datu bāzi un failu</strong>.",
         "I have taken a backup of the database and files." => "Esmu izveidojis datu bāzes un failu dublējumu.",
+        "Short Description" => "Īss apraksts",
+        "Cylinder" => "Cilindrs",
+        "Other Product Service Charges" => "Citi produkta pakalpojumu maksājumi",
 
 ];
 // Latvian lav

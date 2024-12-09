@@ -1937,6 +1937,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "ચાલુ રાખવા માટે કૃપા કરીને સિસ્ટમને નવીનતમ સંસ્કરણ પર અપડેટ કરો. અપડેટ પ્રક્રિયા શરૂ કરવા માટે કૃપા કરીને <strong>અપડેટ ઇન્સ્ટોલ કરો</strong> બટન પર ક્લિક કરો.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> અમે ભલામણ કરીએ છીએ</strong> કે તમે નવા સંસ્કરણ પર અપડેટ કરતા પહેલા પહેલા <strong>ડેટાબેઝ અને ફાઇલ</strong> બેકઅપ લો.",
 	"I have taken a backup of the database and files." => "મેં ડેટાબેઝ અને ફાઈલોનો બેકઅપ લીધો છે.",
-
+	"Short Description" => "કુલ વર્ણન",
+    "Cylinder" => "સિલિન્ડર",
+    "Other Product Service Charges" => "અન્ય ઉત્પાદન સેવા ચાર્જ",
 ];
 // Gujarati/guj

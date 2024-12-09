@@ -1601,5 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ak chcete pokračovať, aktualizujte systém na najnovšiu verziu. Kliknutím na tlačidlo <strong>Inštalovať aktualizáciu</strong> spustíte proces aktualizácie.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Odporúčame</strong>, aby ste si pred aktualizáciou na novú verziu urobili zálohu <strong>databázy a súboru</strong>.",
         "I have taken a backup of the database and files." => "Urobil som zálohu databázy a súborov.",
+        "Short Description" => "Krátky popis",
+        "Cylinder" => "Valec",
+        "Other Product Service Charges" => "Iné poplatky za služby produktu",
 ];
 // Slovak slo

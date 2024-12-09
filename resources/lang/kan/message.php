@@ -1599,6 +1599,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಸಿಸ್ಟಮ್ ಅನ್ನು ನವೀಕರಿಸಿ. ನವೀಕರಣ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಯವಿಟ್ಟು <strong>ಅಪ್‌ಡೇಟ್ ಸ್ಥಾಪಿಸು</strong> ಬಟನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "ಹೊಸ ಆವೃತ್ತಿಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡುವ ಮೊದಲು ನೀವು <strong>ಡೇಟಾಬೇಸ್ ಮತ್ತು ಫೈಲ್</strong> ಬ್ಯಾಕಪ್ ತೆಗೆದುಕೊಳ್ಳುವಂತೆ <strong> ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ</strong>.",
 	"I have taken a backup of the database and files." => "ನಾನು ಡೇಟಾಬೇಸ್ ಮತ್ತು ಫೈಲ್‌ಗಳ ಬ್ಯಾಕಪ್ ಅನ್ನು ತೆಗೆದುಕೊಂಡಿದ್ದೇನೆ.",
+    "Short Description" => "ಸಂಕ್ಷಿಪ್ತ ವಿವರಣೆ",
+    "Cylinder" => "ಸಿಲಿಂಡರ್",
+    "Other Product Service Charges" => "ಇತರ ಉತ್ಪನ್ನ ಸೇವಾ ಶುಲ್ಕಗಳು",
+
 
 ];
 // Kannada kan

@@ -1952,6 +1952,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "يرجى تحديث النظام إلى الإصدار الأحدث للمتابعة. الرجاء النقر فوق الزر <strong>تثبيت التحديث</strong> لبدء عملية التحديث.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> نوصي</strong> بأخذ النسخة الاحتياطية <strong>لقاعدة البيانات والملفات</strong> أولاً قبل التحديث إلى الإصدار الجديد.",
 	"I have taken a backup of the database and files." => "لقد قمت بأخذ نسخة احتياطية من قاعدة البيانات والملفات.",
+	"Short Description" => "وصف قصير",
+    "Cylinder" => "أسطوانة",
+	"Other Product Service Charges" => "رسوم خدمة المنتج الأخرى",
+ 
 
 ];
 

@@ -1939,6 +1939,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Actualizați sistemul la cea mai recentă versiune pentru a continua. Faceți clic pe butonul <strong>Instalați actualizarea</strong> pentru a începe procesul de actualizare.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Vă recomandăm</strong> să faceți mai întâi copia de rezervă a <strong>bazei de date și fișierelor</strong> înainte de a actualiza la noua versiune.",
 	"I have taken a backup of the database and files." => "Am făcut o copie de rezervă a bazei de date și a fișierelor.",
+	"Short Description" => "Descriere scurtă",
+    "Cylinder" => "Cilindru",
+    "Other Product Service Charges" => "Alte taxe pentru servicii de produs",
 
 ];
 	// Romanian/rum

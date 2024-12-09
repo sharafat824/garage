@@ -1599,5 +1599,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Update w.e.g. de System op déi lescht Versioun fir weiderzemaachen. Klickt w.e.g. op de Knäppchen <strong>Install Update</strong> fir den Updateprozess unzefänken.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Mir recommandéieren</strong> datt Dir d'<strong>Datebank & Datei</strong> Backup fir d'éischt ier Dir op déi nei Versioun aktualiséiert.",
         "I have taken a backup of the database and files." => "Ech hunn e Backup vun der Datebank an Dateien geholl.",
+        "Short Description" => "Kuerz Beschreiwung",
+        "Cylinder" => "Zylinder",
+        "Other Product Service Charges" => "Aner Produkt Service Käschten",
 ];
 // Luxembourgish ltz

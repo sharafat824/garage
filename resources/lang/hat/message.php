@@ -1601,6 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Tanpri aktyalize sistèm nan ak dènye vèsyon an pou kontinye. Tanpri klike sou bouton <strong>Enstale Mizajou</strong> pou kòmanse pwosesis aktyalizasyon a.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Nou rekòmande</strong> ke ou pran backup <strong>baz done ak dosye</strong> anvan anvan ou mete ajou nan nouvo vèsyon an.",
         "I have taken a backup of the database and files." => "Mwen te pran yon backup nan baz done a ak dosye yo.",
-
+       "Short Description" => "Deskripsyon kout",
+       "Cylinder" => "Silenn",
+       "Other Product Service Charges" => "Lòt frè sèvis pwodwi",
 ];
 // Haitian creole hat

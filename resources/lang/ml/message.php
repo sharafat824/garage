@@ -1602,6 +1602,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "തുടരാൻ ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് സിസ്റ്റം അപ്ഡേറ്റ് ചെയ്യുക. അപ്‌ഡേറ്റ് പ്രോസസ്സ് ആരംഭിക്കുന്നതിന് ദയവായി <strong>അപ്‌ഡേറ്റ് ഇൻസ്റ്റാൾ ചെയ്യുക</strong> ബട്ടണിൽ ക്ലിക്കുചെയ്യുക.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുന്നതിന് മുമ്പ് നിങ്ങൾ ആദ്യം <strong>ഡാറ്റാബേസും ഫയലും</strong> ബാക്കപ്പ് എടുക്കാൻ <strong> ഞങ്ങൾ ശുപാർശ ചെയ്യുന്നു</strong>.",
 	"I have taken a backup of the database and files." => "ഞാൻ ഡാറ്റാബേസിന്റെയും ഫയലുകളുടെയും ബാക്കപ്പ് എടുത്തിട്ടുണ്ട്.",
+	"Short Description" => "ചുരുങ്ങിയ വിവരണം",
+    "Cylinder" => "സിലിണ്ടർ",
+    "Other Product Service Charges" => "മറ്റു ഉൽപ്പന്ന സേവന ചാർജുകൾ",
 
 ];
 // Malayalam ml

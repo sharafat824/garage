@@ -1598,6 +1598,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "جاری رکھنے کے لیے براہ کرم سسٹم کو تازہ ترین ورژن میں اپ ڈیٹ کریں۔ اپ ڈیٹ کا عمل شروع کرنے کے لیے براہ کرم <strong>اپ ڈیٹ انسٹال کریں</strong> بٹن پر کلک کریں۔",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> ہم تجویز کرتے ہیں</strong> کہ آپ نئے ورژن کو اپ ڈیٹ کرنے سے پہلے پہلے <strong>ڈیٹا بیس اور فائل</strong> کا بیک اپ لیں۔",
 	"I have taken a backup of the database and files." => "میں نے ڈیٹا بیس اور فائلوں کا بیک اپ لے لیا ہے۔",
+	"Short Description" => "مختصر تفصیل",
+    "Cylinder" => "سلنڈر",
+    "Other Product Service Charges" => "دیگر مصنوعات کی سروس چارجز",
 
 ];
 // Urdu urd

@@ -1599,6 +1599,10 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Davam etmək üçün sistemi ən son versiyaya yeniləyin. Lütfən, yeniləmə prosesini başlamaq üçün <strong>Yeniləməni quraşdırın</strong> düyməsini klikləyin.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Tövsiyə edirik</strong> yeni versiyaya güncəlləməzdən əvvəl <strong>verilənlər bazası və fayl</strong> ehtiyat nüsxəsini götürün.",
         "I have taken a backup of the database and files." => "Mən verilənlər bazası və faylların ehtiyat nüsxəsini götürmüşəm.",
+        "Short Description" => "Qısa Təsvir",
+        "Cylinder" => "Silindr",
+	"Other Product Service Charges" => "Digər məhsul xidmət haqları",
+
 
 
 ];

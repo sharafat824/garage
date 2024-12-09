@@ -1937,6 +1937,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "请将系统更新至最新版本才能继续。 请单击<strong>安装更新</strong>按钮开始更新过程。",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>我们建议</strong>您在更新到新版本之前先进行<strong>数据库和文件</strong>备份。",
 	"I have taken a backup of the database and files." => "我已经备份了数据库和文件。",
+	"Short Description" => "简短描述",
+    "Cylinder" => "气缸",
+    "Other Product Service Charges" => "其他产品服务费用",
 ];
  
 		// chinese (Simplified) / zh

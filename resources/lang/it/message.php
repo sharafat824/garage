@@ -1936,6 +1936,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Aggiorna il sistema alla versione più recente per continuare. Fai clic sul pulsante <strong>Installa aggiornamento</strong> per avviare il processo di aggiornamento.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Ti consigliamo</strong> di eseguire il backup del <strong>database e dei file</strong> prima di aggiornare alla nuova versione.",
 	"I have taken a backup of the database and files." => "Ho eseguito un backup del database e dei file.",
+    "Short Description" => "Descrizione breve",
+    "Cylinder" => "Cilindro",
+    "Other Product Service Charges" => "Altri costi di servizio del prodotto",
 
 ];
 	// Italian / it

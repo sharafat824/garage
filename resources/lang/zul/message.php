@@ -1601,5 +1601,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Sicela ubuyekeze uhlelo lube yinguqulo yakamuva ukuze uqhubeke. Sicela uchofoze inkinobho <strong>yokufaka isibuyekezo</strong> ukuze uqale inqubo yokubuyekeza.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Sincoma</strong> ukuthi uthathe <strong>isizindalwazi nefayela</strong> ukwenza isipele kuqala ngaphambi kokuthuthukela enguqulweni entsha.",
 	"I have taken a backup of the database and files." => "Ngithathe isipele sesizindalwazi namafayela.",
+	"Short Description" => "Incazelo Efishane",
+    "Cylinder" => "Isilinda",
+    "Other Product Service Charges" => "Ezinye Izinkokhelo Zesikhungo Semikhiqizo",
 ];
 // Zulu zul

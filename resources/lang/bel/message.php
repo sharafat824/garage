@@ -1600,6 +1600,9 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Каб працягнуць, абнавіце сістэму да апошняй версіі. Націсніце на кнопку <strong>Устанавіць абнаўленне</strong>, каб пачаць працэс абнаўлення.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Мы рэкамендуем</strong> спачатку зрабіць рэзервовую копію <strong>базы даных і файлаў</strong> перад абнаўленнем да новай версіі.",
         "I have taken a backup of the database and files." => "Я зрабіў рэзервовую копію базы дадзеных і файлаў.",
+        "Short Description" => "Кароткае апісанне",
+        "Cylinder" => "Цыліндр",
+	"Other Product Service Charges" => "Іншыя зборы за паслугі прадукту",
 
 
 ];

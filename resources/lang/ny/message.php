@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Chonde sinthani dongosolo kuti likhale laposachedwa kuti mupitilize. Chonde dinani batani la <strong>Install Update</strong> kuti muyambe kukonza.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Tikukulimbikitsani</strong> kuti mutenge <strong>zosunga zobwezeretsera & file</strong> kaye musanasinthe ku mtundu watsopano.",
         "I have taken a backup of the database and files." => "Ndatenga zosunga zobwezeretsera za database ndi mafayilo.",
+        "Short Description" => "Kufotokozera Kofupikitsa",
+        "Cylinder" => "Silinda",
+        "Other Product Service Charges" => "Ma Chikondwerero a Ntchito Zina za Zogulitsa",
 ];
 // Chichewa ny

@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Лутфан системаро ба версияи охирин навсозӣ кунед, то идома диҳед. Лутфан тугмаи <strong>Насби навсозӣ</strong>-ро пахш кунед, то раванди навсозӣро оғоз кунед.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Мо тавсия медиҳем</strong>, ки пеш аз навсозӣ ба версияи нав нусхаи <strong>мазани маълумот ва файл</strong>-ро гиред.",
         "I have taken a backup of the database and files." => "Ман нусхаи эҳтиётии пойгоҳи додаҳо ва файлҳоро гирифтам.",
+        "Short Description" => "Тавсифи кӯтоҳ",
+        "Cylinder" => "Цилиндр",
+        "Other Product Service Charges" => "Ҳамёни дигар хидматрасонии маҳсулот",
 ];
 // Tajik tgk

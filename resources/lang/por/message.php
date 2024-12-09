@@ -1934,5 +1934,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Atualize o sistema para a versão mais recente para continuar. Clique no botão <strong>Instalar atualização</strong> para iniciar o processo de atualização.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Recomendamos</strong> que você faça o backup do <strong>banco de dados e arquivos</strong> antes de atualizar para a nova versão.",
 	"I have taken a backup of the database and files." => "Fiz um backup do banco de dados e dos arquivos.",
+	"Short Description" => "Descrição curta",
+    "Cylinder" => "Cilindro",
+    "Other Product Service Charges" => "Outras taxas de serviço de produto",
 ];
 	    // Portuguese /por

@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Жалғастыру үшін жүйені соңғы нұсқаға жаңартыңыз. Жаңарту процесін бастау үшін <strong>Жаңартуды орнату</strong> түймесін басыңыз.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Жаңа нұсқаға жаңарту алдында алдымен <strong>деректер қорының және файлдың</strong> сақтық көшірмесін алуды ұсынамыз</strong>.",
         "I have taken a backup of the database and files." => "Мен дерекқор мен файлдардың сақтық көшірмесін алдым.",
+        "Short Description" => "Қысқаша сипаттама",
+        "Cylinder" => "Цилиндр",
+        "Other Product Service Charges" => "Басқа өнім қызметтеріне ақы",
 ];
 // Kazakh kk

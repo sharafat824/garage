@@ -1939,6 +1939,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Actualitzeu el sistema a la darrera versió per continuar. Feu clic al botó <strong>Instal·la l'actualització</strong> per iniciar el procés d'actualització.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Us recomanem</strong> que feu primer la còpia de seguretat de <strong>base de dades i fitxer</strong> abans d'actualitzar a la nova versió.",
 	"I have taken a backup of the database and files." => "He fet una còpia de seguretat de la base de dades i els fitxers.",
+	"Short Description" => "Descripció breu",
+    "Cylinder" => "Cilindre",
+	"Other Product Service Charges" => "Altres càrrecs per servei de producte",
+
 
 ];
 	// Catalan/cat

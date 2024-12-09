@@ -1600,5 +1600,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "దయచేసి కొనసాగించడానికి సిస్టమ్‌ను తాజా వెర్షన్‌కి అప్‌డేట్ చేయండి. దయచేసి నవీకరణ ప్రక్రియను ప్రారంభించడానికి <strong>నవీకరణను ఇన్‌స్టాల్ చేయి</strong> బటన్‌పై క్లిక్ చేయండి.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "క్రొత్త సంస్కరణకు నవీకరించడానికి ముందు మీరు <strong>డేటాబేస్ & ఫైల్</strong> బ్యాకప్ తీసుకోవాలని <strong> మేము సిఫార్సు చేస్తున్నాము</strong>.",
         "I have taken a backup of the database and files." => "నేను డేటాబేస్ మరియు ఫైల్‌ల బ్యాకప్ తీసుకున్నాను.",
+        "Short Description" => "చిన్న వివరణ",
+        "Cylinder" => "సిలిండర్",
+        "Other Product Service Charges" => "ఇతర ఉత్పత్తి సేవా ఛార్జీలు",    
 ];
 // Telugu te

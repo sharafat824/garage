@@ -1938,6 +1938,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Päivitä järjestelmä uusimpaan versioon jatkaaksesi. Aloita päivitys napsauttamalla <strong>Asenna päivitys</strong> -painiketta.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Suosittelemme</strong>, että otat <strong>tietokannasta ja tiedostosta</strong> varmuuskopion ennen kuin päivität uuteen versioon.",
 	"I have taken a backup of the database and files." => "Olen ottanut varmuuskopion tietokannasta ja tiedostoista.",
+	"Short Description" => "Lyhyt kuvaus",
+    "Cylinder" => "Sylinteri",
+	"Other Product Service Charges"=>"Muut tuotteen palvelumaksut"
 
 ];
 	// Finnish/fin

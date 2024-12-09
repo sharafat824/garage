@@ -1599,6 +1599,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Diweddarwch y system i'r fersiwn diweddaraf i barhau. Cliciwch ar y botwm <strong>Gosod Diweddariad</strong> i gychwyn y broses ddiweddaru.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Rydym yn argymell</strong> eich bod yn cymryd y <strong>cronfa ddata & ffeil</strong> wrth gefn yn gyntaf cyn diweddaru i'r fersiwn newydd.",
 	"I have taken a backup of the database and files." => "Rwyf wedi cymryd copi wrth gefn o'r gronfa ddata a'r ffeiliau.",
+	"Short Description" => "Disgrifiad Byr",
+    "Cylinder" => "Silindr",
+	"Other Product Service Charges" => "Arian gwasanaeth cynnyrch eraill",
+
 
 ];
 // Welsh cy

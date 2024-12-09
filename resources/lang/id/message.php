@@ -1928,7 +1928,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Harap perbarui sistem ke versi terbaru untuk melanjutkan. Silakan klik tombol <strong>Instal Pembaruan</strong> untuk memulai proses pembaruan.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Kami menyarankan</strong> agar Anda membuat cadangan <strong>database & file</strong> terlebih dahulu sebelum memperbarui ke versi baru.",
 	"I have taken a backup of the database and files." => "Saya telah mengambil cadangan database dan file.",
-
+    "Short Description" => "Deskripsi Singkat",
+    "Cylinder" => "Silinder",
+    "Other Product Service Charges" => "Biaya Layanan Produk Lain",
 ];
 
 // Indonesian / id

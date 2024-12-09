@@ -1601,6 +1601,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Үргэлжлүүлэхийн тулд системийг хамгийн сүүлийн хувилбар руу шинэчилнэ үү. Шинэчлэлтийг эхлүүлэхийн тулд <strong>Шинэчлэлт суулгах</strong> товчийг дарна уу.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Бид танд</strong> шинэ хувилбар руу шинэчлэхийн өмнө эхлээд <strong>өгөгдлийн сан ба файл</strong> нөөцлөхийг зөвлөж байна.",
 	"I have taken a backup of the database and files." => "Би мэдээллийн сан болон файлуудын нөөц хуулбарыг авсан.",
+	"Short Description" => "Товч тодорхойлолт",
+    "Cylinder" => "Цилиндр",
+    "Other Product Service Charges" => "Бусад бүтээгдэхүүний үйлчилгээний хураамж",
 
 ];
 // Mongolian mon

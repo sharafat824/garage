@@ -1601,6 +1601,9 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Nceda uhlaziye isistim iye kuguqulelo lwamva nje ukuze uqhubeke. Nceda ucofe ku <strong>Fakela Uhlaziyo</strong> ukuqalisa inkqubo yohlaziyo.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Sicebisa</strong> ukuba uthathe <strong>isiseko sedatha & nefayile</strong> yokugcina ngaphambi kokuhlaziya kuguqulelo olutsha.",
         "I have taken a backup of the database and files." => "Ndithathe i-backup ye-database kunye neefayile.",
+        "Short Description" => "Inkcazo emifutshane",
+        "Cylinder" => "Isilinda",
+        "Other Product Service Charges" => "Ezinye iimali zenkonzo yemveliso",        
 
 ];
 // Xhosa xho

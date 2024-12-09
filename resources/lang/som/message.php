@@ -1601,5 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Fadlan ku cusboonaysii nidaamka oo aad u rogto nooca ugu dambeeyay si aad u sii waddo. Fadlan dhagsii badhanka<strong>Ku rakib Cusbooneysii</strong>si aad u bilowdo habsocodka cusboonaysiinta.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Waxaan kugula talineynaa</strong>in aad marka hore qaadato<strong>database & file</strong>kaabta ka hor inta aadan cusboonaysiin nooca cusub.",
         "I have taken a backup of the database and files." => "Waxaan qaatay kayd kaydka xogta iyo faylalka",
+        "Short Description" => "Sharaxaad Kooban",
+        "Cylinder" => "Silinder",
+        "Other Product Service Charges" => "Kharashaadka Adeegyada Alaabta Kale",
 ];
 // Somali som

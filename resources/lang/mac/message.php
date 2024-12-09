@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ажурирајте го системот на најновата верзија за да продолжите. Ве молиме кликнете на копчето <strong>Инсталирај ажурирање</strong> за да го започнете процесот на ажурирање.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Препорачуваме</strong> прво да направите резервна копија од <strong>базата на податоци и датотека</strong> пред да ја ажурирате на новата верзија.",
         "I have taken a backup of the database and files." => "Направив резервна копија од базата на податоци и датотеки.",
+        "Short Description" => "Краток опис",
+        "Cylinder" => "Цилиндар",
+        "Other Product Service Charges" => "Други трошоци за услуга на производот",
 ];
 // Macedonian mac

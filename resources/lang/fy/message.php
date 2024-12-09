@@ -1602,6 +1602,9 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Update it systeem asjebleaft nei de lêste ferzje om troch te gean. Klikje asjebleaft op de knop <strong>Ynstallearje Update</strong> om it fernijingsproses te begjinnen.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Wy riede oan</strong> dat jo earst de reservekopy fan <strong>databank en bestân</strong> nimme foardat jo bywurkje nei de nije ferzje.",
         "I have taken a backup of the database and files." => "Ik haw in reservekopy nommen fan 'e databank en bestannen.",
+        "Short Description" => "Koarte beskriuwing",
+        "Cylinder" => "Silinder",
+	"Other Product Service Charges"=> "Oare produkt tsjinstfergoedings",
 
 ];
 // Frisian fy

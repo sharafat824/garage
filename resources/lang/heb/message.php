@@ -1938,6 +1938,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "אנא עדכן את המערכת לגרסה העדכנית ביותר כדי להמשיך. אנא לחץ על הלחצן <strong>התקן עדכון</strong> כדי להתחיל בתהליך העדכון.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> אנו ממליצים</strong> לקחת תחילה את הגיבוי של <strong>מסד הנתונים והקובץ</strong> לפני שתעדכן לגרסה החדשה.",
 	"I have taken a backup of the database and files." => "עשיתי גיבוי של מסד הנתונים והקבצים.",
-
+    "Short Description" => "תיאור קצר",
+    "Cylinder" => "צילינדר",
+    "Other Product Service Charges" => "עמלות שירות מוצר אחרות",
 ];
 	// Hebrew (Israel)/heb

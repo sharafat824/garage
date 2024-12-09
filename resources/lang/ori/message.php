@@ -1602,5 +1602,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "ଜାରି ରଖିବାକୁ ଦୟାକରି ସିଷ୍ଟମକୁ ସର୍ବଶେଷ ସଂସ୍କରଣକୁ ଅଦ୍ୟତନ କରନ୍ତୁ | ଅଦ୍ୟତନ ପ୍ରକ୍ରିୟା ଆରମ୍ଭ କରିବାକୁ ଦୟାକରି <strong> ସଂସ୍ଥାପନ </ strong> ବଟନ୍ ଉପରେ କ୍ଲିକ୍ କରନ୍ତୁ |",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> ଆମେ ସୁପାରିଶ କରୁଛୁ ଯେ ନୂତନ ସଂସ୍କରଣକୁ ଅଦ୍ୟତନ କରିବା ପୂର୍ବରୁ ଆପଣ ପ୍ରଥମେ <strong> ଡାଟାବେସ୍ ଏବଂ ଫାଇଲ୍ </ strong> ବ୍ୟାକଅପ୍ ନିଅନ୍ତୁ |",
 	"I have taken a backup of the database and files." => "ମୁଁ ଡାଟାବେସ୍ ଏବଂ ଫାଇଲ୍ ର ଏକ ବ୍ୟାକଅପ୍ ନେଇଛି |",
+	"Short Description" => "ସଂକ୍ଷିପ୍ତ ବିବରଣୀ",
+    "Cylinder" => "ସିଲିଣ୍ଡର",
+    "Other Product Service Charges" => "ଅନ୍ୟ ଉତ୍ପାଦ ସେବା ଚାର୍ଜ୍ସ",
 ];
 // odia ori

@@ -1938,5 +1938,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "โปรดอัปเดตระบบเป็นเวอร์ชันล่าสุดเพื่อดำเนินการต่อ โปรดคลิกที่ปุ่ม <strong>ติดตั้งการอัปเดต</strong> เพื่อเริ่มกระบวนการอัปเดต",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> เราขอแนะนำ</strong> ให้คุณสำรองข้อมูล <strong>ฐานข้อมูลและไฟล์</strong> ก่อนที่จะอัปเดตเป็นเวอร์ชันใหม่",
 	"I have taken a backup of the database and files." => "ฉันได้สำรองข้อมูลฐานข้อมูลและไฟล์แล้ว",
+	"Short Description" => "คำอธิบายสั้น",
+    "Cylinder" => "กระบอกสูบ",
+    "Other Product Service Charges" => "ค่าบริการผลิตภัณฑ์อื่น ๆ",
 ];
 // Thai /tha

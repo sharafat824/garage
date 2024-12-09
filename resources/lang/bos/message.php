@@ -1599,6 +1599,10 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Molimo ažurirajte sistem na najnoviju verziju da nastavite. Kliknite na dugme <strong>Instaliraj ažuriranje</strong> da započnete proces ažuriranja.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Preporučujemo</strong> da prvo napravite sigurnosnu kopiju <strong>baze podataka i datoteka</strong> prije ažuriranja na novu verziju.",
         "I have taken a backup of the database and files." => "Napravio sam sigurnosnu kopiju baze podataka i datoteka.",
+        "Short Description" => "Kratki opis",
+        "Cylinder" => "Cilindar",
+        "Other Product Service Charges" => "Ostale naknade za usluge proizvoda",
+
 
 
 ];

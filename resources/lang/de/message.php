@@ -1938,6 +1938,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Bitte aktualisieren Sie das System auf die neueste Version, um fortzufahren. Klicken Sie bitte auf die Schaltfläche <strong>Update installieren</strong>, um den Update-Vorgang zu starten.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Wir empfehlen</strong>, dass Sie zunächst die <strong>Datenbank- und Dateisicherung</strong> durchführen, bevor Sie auf die neue Version aktualisieren.",
 	"I have taken a backup of the database and files." => "Ich habe ein Backup der Datenbank und Dateien erstellt.",
+	"Short Description" => "Kurze Beschreibung",
+    "Cylinder" => "Zylinder",
+	"Other Product Service Charges" => "Andere Produktservicegebühren",
+
 
 ];
 //German /ger

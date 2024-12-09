@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Sila kemas kini sistem kepada versi terkini untuk meneruskan. Sila klik pada butang <strong>Pasang Kemas Kini</strong> untuk memulakan proses kemas kini.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Kami mengesyorkan</strong> supaya anda mengambil sandaran <strong>pangkalan data & fail</strong> dahulu sebelum mengemas kini kepada versi baharu.",
         "I have taken a backup of the database and files." => "Saya telah mengambil sandaran pangkalan data dan fail.",
+        "Short Description" => "Penerangan Ringkas",
+        "Cylinder" => "Silinder",
+        "Other Product Service Charges" => "Caj Perkhidmatan Produk Lain",
 ];
 // Malay may

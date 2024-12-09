@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Dowam etmek üçin ulgamy iň soňky wersiýa täzeläň. Täzelenme işine başlamak üçin <strong> Täzelenme gurmak </strong> düwmesine basyň.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Täze wersiýa täzelenmezden ozal <strong> maglumat bazasy we faýl </strong> ätiýaçlyk nusgasyny almagyňyzy maslahat berýäris.",
         "I have taken a backup of the database and files." => "Maglumat bazasynyň we faýllaryň ätiýaçlyk nusgasyny aldym.",
+        "Short Description" => "Gysga düşündiriş",
+        "Cylinder" => "Silindr",
+        "Other Product Service Charges" => "Başga önüm hyzmatyny tölemeler", 
 ];
 // Turkmen tuk

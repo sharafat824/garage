@@ -1938,6 +1938,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "सुरू ठेवण्यासाठी कृपया सिस्टमला नवीनतम आवृत्तीवर अपडेट करा. अपडेट प्रक्रिया सुरू करण्यासाठी कृपया <strong>अद्यतन स्थापित करा</strong> बटणावर क्लिक करा.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> आम्ही शिफारस करतो</strong> की तुम्ही नवीन आवृत्तीवर अपडेट करण्यापूर्वी प्रथम <strong>डेटाबेस आणि फाइल</strong> बॅकअप घ्या.",
 	"I have taken a backup of the database and files." => "मी डेटाबेस आणि फाइल्सचा बॅकअप घेतला आहे.",
+	"Short Description" => "लघु वर्णन",
+    "Cylinder" => "सिलिंडर",
+    "Other Product Service Charges" => "इतर उत्पादन सेवा शुल्क",
 ];
 
 // Marathi/ mar

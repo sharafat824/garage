@@ -1599,6 +1599,10 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Моля, актуализирайте системата до най-новата версия, за да продължите. Моля, щракнете върху бутона <strong>Инсталиране на актуализация</strong>, за да започнете процеса на актуализация.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Препоръчваме</strong> първо да направите резервно копие на <strong>база данни и файл</strong>, преди да актуализирате до новата версия.",
         "I have taken a backup of the database and files." => "Направих резервно копие на базата данни и файловете.",
+        "Short Description" => "Кратко описание",
+        "Cylinder" => "Цилиндър",
+        "Other Product Service Charges" => "Други такси за услуга на продукта",
+
 
 ];
 // Bulgarian bg

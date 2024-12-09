@@ -1601,6 +1601,9 @@ return [
     "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Jekk jogħġbok aġġorna s-sistema għall-aħħar verżjoni biex tkompli. Jekk jogħġbok ikklikkja fuq il-buttuna <strong>Installa Aġġornament</strong> biex tibda l-proċess ta 'aġġornament.",
     "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Nirrakkomandaw</strong>li tieħu l-<strong>database & file</strong>backup l-ewwel qabel taġġorna għall-verżjoni l-ġdida.",
     "I have taken a backup of the database and files." => "Ħadt backup tad-database u l-fajls.",
+    "Short Description" => "Deskrizzjoni Qasira",
+    "Cylinder" => "Cilindru",
+    "Other Product Service Charges" => "Ħlasijiet ta' Servizz għall-Produkti Oħra",    
 
 ];
 // Maltese mlt  

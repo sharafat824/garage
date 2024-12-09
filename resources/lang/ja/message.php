@@ -1938,6 +1938,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "続行するには、システムを最新バージョンに更新してください。 [<strong>アップデートのインストール</strong>] ボタンをクリックしてアップデート プロセスを開始してください。",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "新しいバージョンに更新する前に、 まず<strong>データベースとファイル</strong>のバックアップを作成することをお勧め</strong>します。",
 	"I have taken a backup of the database and files." => "データベースとファイルのバックアップをとりました。",
+	"Short Description" => "簡単な説明",
+    "Cylinder" => "シリンダー",
+    "Other Product Service Charges" => "その他の製品サービス料金",
 
 ];
 

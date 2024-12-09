@@ -1935,6 +1935,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Chcete-li pokračovat, aktualizujte systém na nejnovější verzi. Kliknutím na tlačítko <strong>Instalovat aktualizaci</strong> zahájíte proces aktualizace.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Doporučujeme</strong> si před aktualizací na novou verzi nejprve vytvořit zálohu <strong>databáze a souboru</strong>.",
 	"I have taken a backup of the database and files." => "Udělal jsem zálohu databáze a souborů.",
+    "Short Description" => "Krátký popis",
+    "Cylinder" => "Cylindr",
+	"Other Product Service Charges" => "Jiné poplatky za službu produktu",
 
 ];
 	// Czech/cs

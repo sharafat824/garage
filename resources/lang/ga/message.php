@@ -1599,5 +1599,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Nuashonraigh an córas go dtí an leagan is déanaí le leanúint ar aghaidh. Cliceáil ar an gcnaipe <strong>Suiteáil Nuashonrú</strong> chun tús a chur leis an bpróiseas nuashonraithe.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Molaimid</strong> go nglacfaidh tú an cúltaca <strong>bunachar sonraí & comhad</strong> ar dtús sula n-uashonraíonn tú go dtí an leagan nua.",
         "I have taken a backup of the database and files." => "Ghlac mé cúltaca den bhunachar sonraí agus comhaid.",
+       "Short Description" => "Cur síos gairid" ,
+       "Cylinder" => "Silindir" ,
+       "Other Product Service Charges" => "Muirear seirbhíse táirgí eile",
 ];
 // Irish ga

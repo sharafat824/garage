@@ -1602,5 +1602,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "계속하려면 시스템을 최신 버전으로 업데이트하세요. 업데이트 프로세스를 시작하려면 <strong>업데이트 설치</strong> 버튼을 클릭하세요.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> 새 버전으로 업데이트하기 전에 먼저 <strong>데이터베이스 및 파일</strong> 백업을 수행하는 것이 좋습니다</strong>.",
 	"I have taken a backup of the database and files." => "데이터베이스와 파일을 백업했습니다.",
+	"Short Description" => "간략한 설명",
+    "Cylinder" => "실린더",
+    "Other Product Service Charges" => "기타 제품 서비스 요금",
 ];
 // Korean ko

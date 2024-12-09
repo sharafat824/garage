@@ -1602,6 +1602,10 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "請將系統更新至最新版本才能繼續。 請點選<strong>安裝更新</strong>按鈕開始更新程序。",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>我們建議</strong>您在更新到新版本之前先進行<strong>資料庫和檔案</strong>備份。",
         "I have taken a backup of the database and files." => "我已經備份了資料庫和文件。",
+        "Short Description" => "简短描述",
+        "Cylinder" => "圆柱",
+        "Other Product Service Charges" => "其他产品服务费用",
+
 
 ];
 // Chinese (Mandarin) cmn

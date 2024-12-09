@@ -1934,6 +1934,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Vänligen uppdatera systemet till den senaste versionen för att fortsätta. Klicka på knappen <strong>Installera uppdatering</strong> för att starta uppdateringsprocessen.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Vi rekommenderar</strong> att du tar säkerhetskopian av <strong>databas och fil</strong> först innan du uppdaterar till den nya versionen.",
 	"I have taken a backup of the database and files." => "Jag har tagit en säkerhetskopia av databasen och filerna.",
+	"Short Description" => "Kort Beskrivning",
+    "Cylinder" => "Cylinder",
+    "Other Product Service Charges" => "Andra Tjänstavgifter för Produkter",
 ];
  
 		// Swedish sv

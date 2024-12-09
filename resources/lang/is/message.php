@@ -1598,5 +1598,11 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Vinsamlegast uppfærðu kerfið í nýjustu útgáfuna til að halda áfram. Vinsamlegast smelltu á <strong>Setja upp uppfærslu</strong> hnappinn til að hefja uppfærsluferlið.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Við mælum með</strong> að þú takir <strong>gagnagrunn og skrá</strong> öryggisafritið áður en þú uppfærir í nýju útgáfuna.",
 	"I have taken a backup of the database and files." => "Ég hef tekið öryggisafrit af gagnagrunninum og skrám.",
+	"Short Description" => "Stutt lýsing",
+    "Cylinder" => "Sílindri",
+    "Other Product Service Charges" => "Annað þjónustugjald fyrir vöru",
+	"Short Description" => "Stutt lýsing",
+    "Cylinder" => "Sílindri",
+    "Other Product Service Charges" => "Annað þjónustugjald fyrir vöru",
 ];
 // Icelandic is

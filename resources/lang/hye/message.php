@@ -1598,6 +1598,9 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Շարունակելու համար թարմացրեք համակարգը վերջին տարբերակով: Խնդրում ենք սեղմել <strong>Տեղադրել թարմացում</strong> կոճակը՝ թարմացման գործընթացը սկսելու համար:",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Խորհուրդ ենք տալիս</strong>, որ նախքան նոր տարբերակին թարմացնելը նախ պահուստավորեք <strong>տվյալների բազան և ֆայլը</strong>:",
         "I have taken a backup of the database and files." => "Ես վերցրել եմ տվյալների բազայի և ֆայլերի կրկնօրինակում:",
+        "Short Description" => "Կարճ նկարագրություն",
+        "Cylinder" => "Սիլինդր",
+        "Other Product Service Charges" => "Այլ արտադրանքի ծառայության վճարներ",
 
 ];
 // Armenian hye

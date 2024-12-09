@@ -1938,6 +1938,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "தொடர, கணினியை சமீபத்திய பதிப்பிற்கு புதுப்பிக்கவும். புதுப்பிப்பு செயல்முறையைத் தொடங்க <strong>புதுப்பிப்பை நிறுவு</strong> பொத்தானைக் கிளிக் செய்யவும்.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "புதிய பதிப்பிற்குப் புதுப்பிக்கும் முன் முதலில் <strong>தரவுத்தளம் & கோப்பு</strong> காப்புப் பிரதி எடுக்குமாறு <strong> பரிந்துரைக்கிறோம்</strong>.",
 	"I have taken a backup of the database and files." => "தரவுத்தளம் மற்றும் கோப்புகளை காப்புப் பிரதி எடுத்துள்ளேன்.",
-
+    "Short Description" => "குறுகிய விவரம்",
+    "Cylinder" => "சிலிண்டர்",
+    "Other Product Service Charges" => "பிற பொருள் சேவை கட்டணங்கள்",
 ];
 // Tamil/ Ta

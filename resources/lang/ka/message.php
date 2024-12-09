@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "გთხოვთ, განაახლოთ სისტემა უახლეს ვერსიაზე გასაგრძელებლად. გთხოვთ, დააწკაპუნოთ ღილაკზე <strong>Install Update</strong> განახლების პროცესის დასაწყებად.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> ჩვენ გირჩევთ</strong>, რომ ახალ ვერსიაზე განახლებამდე, ჯერ აიღოთ <strong>მონაცემთა ბაზისა და ფაილის</strong> სარეზერვო ასლი.",
         "I have taken a backup of the database and files." => "მე ავიღე მონაცემთა ბაზის და ფაილების სარეზერვო ასლი.",
+       "Short Description" => "მოკლე აღწერა",
+       "Cylinder" => "ცილინდრი",
+       "Other Product Service Charges" => "სხვა პროდუქტის სერვისული გადასახადები",
 ];
 // Georgian ka

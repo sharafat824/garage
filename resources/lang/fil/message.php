@@ -1601,6 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Mangyaring i-update ang system sa pinakabagong bersyon upang magpatuloy. Mangyaring mag-click sa button na <strong>I-install ang Update</strong> upang simulan ang proseso ng pag-update.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Inirerekomenda namin</strong> na kunin mo muna ang <strong>database at file</strong> backup bago mag-update sa bagong bersyon.",
         "I have taken a backup of the database and files." => "Kumuha ako ng backup ng database at mga file.",
-
+        "Short Description" => "Maikling Paglalarawan",
+        "Cylinder" => "Silindro",
+        "Other Product Service Charges" =>"Iba pang mga singil sa serbisyo ng produkto"
 ];
 // Filipino fil

@@ -1939,6 +1939,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Opdater venligst systemet til den nyeste version for at fortsætte. Klik venligst på knappen <strong>Installer opdatering</strong> for at starte opdateringsprocessen.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Vi anbefaler</strong>, at du tager sikkerhedskopien <strong>database og fil</strong> først, før du opdaterer til den nye version.",
 	"I have taken a backup of the database and files." => "Jeg har taget en backup af databasen og filerne.",
+    "Short Description" => "Kort beskrivelse",
+    "Cylinder" => "Cylinder",
+	"Other Product Service Charges" => "Andre produktservicegebyrer",
 
 ];
 	// Danish /dan

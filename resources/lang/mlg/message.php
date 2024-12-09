@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Havaozy ny rafitra amin'ny kinova farany mba hanohizana. Kitiho azafady ny bokotra <strong>Install Update</strong> hanombohana ny fizotran'ny fanavaozana.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Manoro hevitra izahay</strong> mba haka ny <strong>database & rakitra</strong> backup aloha alohan'ny hanavaozana ny kinova vaovao.",
         "I have taken a backup of the database and files." => "Naka backup ny angon-drakitra sy ny rakitra aho.",
+        "Short Description" => "Famaritana fohy",
+        "Cylinder" => "Silindra",
+        "Other Product Service Charges" => "Saran'ny asa ho an'ny vokatra hafa",
 ];
 // Malagasy mlg

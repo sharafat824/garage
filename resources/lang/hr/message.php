@@ -1939,6 +1939,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Za nastavak ažurirajte sustav na najnoviju verziju. Kliknite na gumb <strong>Instaliraj ažuriranje</strong> kako biste započeli proces ažuriranja.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Preporučamo</strong> da prvo napravite sigurnosnu kopiju <strong>baze podataka i datoteka</strong> prije ažuriranja na novu verziju.",
 	"I have taken a backup of the database and files." => "Napravio sam sigurnosnu kopiju baze podataka i datoteka.",
+	"Short Description" => "Kratki opis",
+    "Cylinder" => "Cilindar",
+    "Other Product Service Charges" => "Ostale naknade za usluge proizvoda",
 
 ];
 // Croatian/hr

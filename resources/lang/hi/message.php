@@ -1931,6 +1931,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "जारी रखने के लिए कृपया सिस्टम को नवीनतम संस्करण में अपडेट करें। अपडेट प्रक्रिया शुरू करने के लिए कृपया <strong>इंस्टॉल अपडेट</strong> बटन पर क्लिक करें।",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> हम अनुशंसा करते हैं</strong> कि आप नए संस्करण में अपडेट करने से पहले <strong>डेटाबेस और फ़ाइल</strong> बैकअप ले लें।",
 	"I have taken a backup of the database and files." => "मैंने डेटाबेस और फ़ाइलों का बैकअप ले लिया है।",
+	"Short Description" => "संक्षिप्त विवरण",
+    "Cylinder" => "सिलिंडर",
+    "Other Product Service Charges" => "अन्य उत्पाद सेवा शुल्क",
 
 ];
 

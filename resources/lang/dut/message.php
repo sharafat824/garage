@@ -1950,6 +1950,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Update het systeem naar de nieuwste versie om door te gaan. Klik op de knop <strong>Update installeren</strong> om het updateproces te starten.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> We raden u aan</strong> eerst een back-up van de <strong>database en bestanden</strong> te maken voordat u bijwerkt naar de nieuwe versie.",
 	"I have taken a backup of the database and files." => "Ik heb een backup gemaakt van de database en bestanden.",
+	"Short Description" => "Korte beschrijving",
+    "Cylinder" => "Cilinder",
+	"Other Product Service Charges" => "Andere productservicekosten",
+
 
 ];
 

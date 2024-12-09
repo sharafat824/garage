@@ -1601,6 +1601,18 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Përditëso sistemin në versionin më të fundit për të vazhduar. Ju lutemi, klikoni në butonin <strong>Instalo përditësimin</strong> për të filluar procesin e përditësimit.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Ne ju rekomandojmë</strong> që së pari të bëni kopje rezervë të <strong>bazës së të dhënave dhe skedarit</strong> përpara se ta përditësoni në versionin e ri.",
         "I have taken a backup of the database and files." => "Kam bërë një kopje rezervë të bazës së të dhënave dhe skedarëve.",
+        "Short Description" => "Përshkrim i Shkurtër",
+        "Cylinder" => "Cilindër",
+	"Other Product Service Charges" => "Tarifa të tjera për shërbimin e produktit",
+
+
+
+
+
+
+
+
+
 
 ];
 // Albanian  alb

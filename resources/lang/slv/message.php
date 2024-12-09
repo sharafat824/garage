@@ -1599,5 +1599,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Za nadaljevanje posodobite sistem na najnovejšo različico. Za začetek postopka posodabljanja kliknite gumb <strong>Namesti posodobitev</strong>.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Priporočamo</strong>, da pred posodobitvijo na novo različico najprej naredite varnostno kopijo <strong>baze podatkov in datotek</strong>.",
         "I have taken a backup of the database and files." => "Naredil sem varnostno kopijo baze podatkov in datotek.",
+        "Short Description" => "Kratek opis",
+        "Cylinder" => "Cilinder",
+        "Other Product Service Charges" => "Druge storitvene pristojbine za izdelek",
 ];
 // Slovenia slv

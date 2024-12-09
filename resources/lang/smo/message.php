@@ -1601,5 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Fa'amolemole fa'afou le faiga ile fa'afou fou e fa'aauau ai. Fa'amolemole kiliki i le <strong>Install Update</strong>fa'amau e amata ai le fa'afouga.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Matou te fautuaina</strong> ia e ave muamua le <strong>fa'amaumauga & faila</strong> a'o le'i fa'afou i le fa'afou fou.",
         "I have taken a backup of the database and files." => "Ua ou ave se faaleoleo o le database ma faila.",
+        "Short Description" => "Fa'amaoniga fa'amaoni",
+        "Cylinder" => "Silinda",
+        "Other Product Service Charges" => "Isi totogi mo auaunaga oloa",
 ];
 // Samoan smo

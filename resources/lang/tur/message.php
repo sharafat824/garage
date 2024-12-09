@@ -1939,5 +1939,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Devam etmek için lütfen sistemi en son sürüme güncelleyin. Güncelleme işlemini başlatmak için lütfen <strong>Güncellemeyi Yükle</strong> düğmesini tıklayın.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "Yeni sürüme güncellemeden önce <strong>veritabanı ve dosya</strong> yedeğini almanızı <strong> öneririz</strong>.",
 	"I have taken a backup of the database and files." => "Veritabanının ve dosyaların yedeğini aldım.",
+	"Short Description" => "Kısa Açıklama",
+    "Cylinder" => "Silindirik",
+    "Other Product Service Charges" => "Diğer Ürün Hizmet Ücretleri",
 ];
 	// Turkish/tur

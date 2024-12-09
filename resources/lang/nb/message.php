@@ -1522,5 +1522,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Oppdater systemet til den nyeste versjonen for å fortsette. Klikk på <strong>Installer oppdatering</strong>-knappen for å starte oppdateringsprosessen.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Vi anbefaler</strong> at du tar sikkerhetskopi av <strong>database og fil</strong> først før du oppdaterer til den nye versjonen.",
         "I have taken a backup of the database and files." => "Jeg har tatt en sikkerhetskopi av databasen og filene.",
+        "Short Description" => "Kort beskrivelse",
+        "Cylinder" => "Sylinder",
+        "Other Product Service Charges" => "Andre produktserviceavgifter",
 ];
 // Bokmål(Norwegian) nb

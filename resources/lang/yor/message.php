@@ -1598,5 +1598,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Jọwọ ṣe imudojuiwọn eto si ẹya tuntun lati tẹsiwaju. Jọwọ tẹ bọtini<strong>Fi imudojuiwọn sori ẹrọ</strong>lati bẹrẹ ilana imudojuiwọn naa.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>A ṣeduro</strong>ki o mu<strong>database & file</strong>afẹyinti ni akọkọ ṣaaju ṣiṣe imudojuiwọn si ẹya tuntun.",
 	"I have taken a backup of the database and files." => "Mo ti ya a afẹyinti ti awọn database ati awọn faili.",
+	"Short Description" => "Apejuwe Kukuru",
+    "Cylinder" => "Sailinda",
+    "Other Product Service Charges" => "Eto Iṣẹ Owo ọja Miiran",    
 ];
 // Yoruba yor	

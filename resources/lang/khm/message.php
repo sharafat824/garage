@@ -1601,6 +1601,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "សូមអាប់ដេតប្រព័ន្ធទៅជាកំណែចុងក្រោយបំផុតដើម្បីបន្ត។ សូមចុចលើប៊ូតុង <strong>ដំឡើងបច្ចុប្បន្នភាព</strong> ដើម្បីចាប់ផ្តើមដំណើរការអាប់ដេត។",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> យើងសូមណែនាំ</strong> ថាអ្នកយក <strong>មូលដ្ឋានទិន្នន័យ និងឯកសារ</strong> បម្រុងទុកជាមុនសិន មុនពេលធ្វើបច្ចុប្បន្នភាពទៅកំណែថ្មី។",
 	"I have taken a backup of the database and files." => "ខ្ញុំបានយកការបម្រុងទុកនៃមូលដ្ឋានទិន្នន័យ និងឯកសារ។",
+	"Short Description" => "ការពិពណ៌នាសង្ខេប",
+    "Cylinder" => "ស៊ីលីនដ្រ",
+    "Other Product Service Charges" => "ការប្រាក់សេវាកម្មផលិតផលផ្សេងទៀត",
 
 ];
 // Khmer khm

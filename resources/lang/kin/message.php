@@ -1601,6 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Nyamuneka vugurura sisitemu kuri verisiyo iheruka kugirango ukomeze. Nyamuneka kanda ahanditse <strong> Shyira ivugurura </strong> kugirango utangire inzira yo kuvugurura.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Turasaba </strong> ko wafata <strong> ububiko bwa dosiye & dosiye </strong> mbere yo kuvugurura verisiyo nshya.",
         "I have taken a backup of the database and files." => "Nafashe backup yububiko na dosiye.",
-
+        "Short Description" => "Ibisobanuro Bifupi",
+        "Cylinder" => "Silindiri",
+        "Other Product Service Charges" => "Andi Macumbi y'Ibicuruzwa",
 ];
 // Kinyarwanda kin

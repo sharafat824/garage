@@ -1601,6 +1601,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ji kerema xwe pergalê bi guhertoya herî dawî nûve bike da ku bidomîne. Ji kerema xwe bişkoka <strong>Nûvekirinê Saz bike</strong> bikirtînin da ku pêvajoya nûvekirinê dest pê bike.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Em tewsiye dikin</strong> ku hûn berî nûvekirina guhertoya nû pêşî hilgirin <strong>base û pel</strong>.",
 	"I have taken a backup of the database and files." => "Min ji databas û pelan kopiyek hilgirtiye.",
+	"Short Description" => "Danasîna kurt",
+    "Cylinder" => "Silindr",
+    "Other Product Service Charges" => "Xercên xizmetên hilberên din",
 
 ];
 // Kurdish kur

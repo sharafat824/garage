@@ -1602,5 +1602,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ажурирајте систем на најновију верзију да бисте наставили. Кликните на дугме <стронг>Инсталирај ажурирање</стронг> да бисте започели процес ажурирања.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<стронг> Препоручујемо</стронг> да прво направите резервну копију <стронг>базе података и датотека</стронг> пре ажурирања на нову верзију.",
 	"I have taken a backup of the database and files." => "Направио сам резервну копију базе података и датотека.",
+	"Short Description" => "Kratak Opis",
+    "Cylinder" => "Cilindar",
+    "Other Product Service Charges" => "Ostali Troškovi Usluga Proizvoda",
 ];
 // Serbian srp

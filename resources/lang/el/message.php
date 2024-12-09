@@ -1937,6 +1937,10 @@ c r Tax Temp',
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ενημερώστε το σύστημα στην πιο πρόσφατη έκδοση για να συνεχίσετε. Κάντε κλικ στο κουμπί <strong>Εγκατάσταση ενημέρωσης</strong> για να ξεκινήσει η διαδικασία ενημέρωσης.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Συνιστούμε</strong> να δημιουργήσετε πρώτα αντίγραφο ασφαλείας <strong>βάσης δεδομένων και αρχείου</strong> πριν από την ενημέρωση στη νέα έκδοση.",
 	"I have taken a backup of the database and files." => "Έχω κάνει ένα αντίγραφο ασφαλείας της βάσης δεδομένων και των αρχείων.",
+	"Short Description" => "Σύντομη περιγραφή",
+    "Cylinder" => "Κύλινδρος",
+	"Other Product Service Charges" => "Άλλες χρεώσεις υπηρεσιών προϊόντος",
+
 
 ];
 // Greek /el

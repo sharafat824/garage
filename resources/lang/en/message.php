@@ -1956,6 +1956,8 @@ return [
 	"Other Services" => "Other Services",
 	"Cylinder" => "Cylinder",
 	"Short Description" => "Short Description",
+	"Other Product Service Charges" => "Other Product Service Charges"
+
 
 
 ];

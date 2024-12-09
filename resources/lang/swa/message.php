@@ -1601,5 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Tafadhali sasisha mfumo hadi toleo jipya zaidi ili kuendelea. Tafadhali bofya kitufe cha <strong>Sakinisha Sasisho</strong> ili kuanza mchakato wa kusasisha.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Tunapendekeza</strong> uchukue hifadhidata ya <strong>na faili</strong> kwanza kabla ya kusasisha hadi toleo jipya.",
         "I have taken a backup of the database and files." => "Nimechukua nakala rudufu ya hifadhidata na faili.",
+        "Short Description" => "Maelezo Mafupi",
+        "Cylinder" => "Silinda",
+        "Other Product Service Charges" => "Gharama Nyingine za Huduma za Bidhaa",
 ];
 // Swahili swa

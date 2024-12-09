@@ -1939,5 +1939,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Norėdami tęsti, atnaujinkite sistemą į naujausią versiją. Norėdami pradėti naujinimo procesą, spustelėkite mygtuką <strong>Įdiegti naujinimą</strong>.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Rekomenduojame</strong> prieš atnaujinant į naują versiją pirmiausia pasidaryti <strong>duomenų bazės ir failo</strong> atsarginę kopiją.",
 	"I have taken a backup of the database and files." => "Pasidariau atsarginę duomenų bazės ir failų kopiją.",
+    "Short Description" => "Trumpas aprašymas",
+    "Cylinder" => "Cilindras",
+    "Other Product Service Charges" => "Kitos produkto paslaugų mokesčiai",
 ];
 	// Lithuanian/lit

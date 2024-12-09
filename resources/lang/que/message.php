@@ -1953,6 +1953,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ama hina kaspa, llamk'anata qhipa kaq layaman musuqyachiy hinalla kananpaq. Ama hina kaspa, <strong>Kunanchasqa churay</strong> ñit'iy musuqchay ruwayta qallarinaykipaq.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Yuyaychayku</strong> ñawpaqta <strong>willakuy waqaychana & willañiqi</strong> waqaychasqata hap'inaykipaq manaraq musuq layaman musuqyachichkaspa.",
 	"I have taken a backup of the database and files." => "Ñuqaqa huk copia de seguridadta ruwarqani base de datosmanta chaymanta archivokunamanta.",
-
+	"Short Description" => "Ñawpaq rikhuy",
+    "Cylinder" => "Sillendra",
+    "Other Product Service Charges" => "Ñawpaq productos serbisyo chaska",
+    
 ];
 // Quechua que

@@ -1600,6 +1600,10 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "চালিয়ে যেতে দয়া করে সর্বশেষ সংস্করণে সিস্টেম আপডেট করুন৷ আপডেট প্রক্রিয়া শুরু করতে অনুগ্রহ করে <strong>আপডেট ইনস্টল করুন</strong> বোতামে ক্লিক করুন৷",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> আমরা সুপারিশ করছি</strong> যে আপনি নতুন সংস্করণে আপডেট করার আগে প্রথমে <strong>ডাটাবেস এবং ফাইল</strong> ব্যাকআপ নিন৷",
 	"I have taken a backup of the database and files." => "আমি ডাটাবেস এবং ফাইলগুলির একটি ব্যাকআপ নিয়েছি।",
+	"Short Description" => "সংক্ষিপ্ত বিবরণ",
+    "Cylinder" => "সিলিন্ডার",
+	"Other Product Service Charges" => "অন্যান্য পণ্য সেবা চার্জ",
+
 
 ];
 // Bangali (Bangla) ben

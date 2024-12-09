@@ -1602,5 +1602,8 @@ return [
        "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Щоб продовжити, оновіть систему до останньої версії. Натисніть кнопку <strong>Установити оновлення</strong>, щоб почати процес оновлення.",
        "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Ми рекомендуємо</strong> створити резервну копію <strong>бази даних і файлів</strong> перед оновленням до нової версії.",
        "I have taken a backup of the database and files." => "Я зробив резервну копію бази даних і файлів.",
+       "Short Description" => "Короткий опис",
+       "Cylinder" => "Циліндр",
+       "Other Product Service Charges" => "Інші збори за обслуговування продукту",
 ];
 // ukrainian ukr

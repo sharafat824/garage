@@ -1602,6 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Actualiza o sistema á versión máis recente para continuar. Fai clic no botón <strong>Instalar actualización</strong> para iniciar o proceso de actualización.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong>Recomendámoslle</strong> que faga primeiro a copia de seguranza da <strong>base de datos e ficheiro</strong> antes de actualizar á nova versión.",
         "I have taken a backup of the database and files." => "Fixen unha copia de seguridade da base de datos e dos ficheiros.",
-
+        "Short Description" => "Descrición curta",
+        "Cylinder" => "Cilindro",
+        "Other Product Service Charges" => "Outros cargos polo servizo do produto",
 ];
 // Galician glg

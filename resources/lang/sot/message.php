@@ -1601,5 +1601,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Ka kopo, nchafatsa sistimi hore e be mofuta oa morao-rao hore o tsoele pele. Ka kopo, tobetsa konopo ea <strong>Install Update</strong> ho qala ts'ebetso.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Re khothaletsa</strong> hore o nke <strong>basebeletsi le faele</strong> pele o ka ntlafatsa mofuta o mocha.",
         "I have taken a backup of the database and files." => "Ke nkile backup ea database le lifaele.",
+        "Short Description" => "Tlhaloso e Khuts'oane",
+        "Cylinder" => "Silinda",
+        "Other Product Service Charges" => "Dikharashoe tsa Ditšebeletso tsa Sehlahisoa se Seng",
 ];
 // Sesotho sot

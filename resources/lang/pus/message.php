@@ -1599,5 +1599,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "مهرباني وکړئ د دوام لپاره سیسټم وروستي نسخه ته تازه کړئ. مهرباني وکړئ د تازه کولو پروسې پیل کولو لپاره د <strong>تازه تازه نصب کړئ</strong> تڼۍ باندې کلیک وکړئ.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> موږ وړاندیز کوو</strong> چې تاسو نوي نسخې ته د تازه کولو دمخه لومړی د <strong>ډیټابیس او فایل</strong> بیک اپ واخلئ.",
 	"I have taken a backup of the database and files." => "ما د ډیټابیس او فایلونو بیک اپ اخیستی دی.",
+	"Short Description" => "لنډه تشریح",
+    "Cylinder" => "سلنډر",
+    "Other Product Service Charges" => "د نورو محصولاتو خدمت فیسونه",
 ];
 // Pashto pus

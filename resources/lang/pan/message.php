@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "ਜਾਰੀ ਰੱਖਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਸਿਸਟਮ ਨੂੰ ਨਵੀਨਤਮ ਸੰਸਕਰਣ ਵਿੱਚ ਅੱਪਡੇਟ ਕਰੋ। ਕਿਰਪਾ ਕਰਕੇ ਅੱਪਡੇਟ ਪ੍ਰਕਿਰਿਆ ਸ਼ੁਰੂ ਕਰਨ ਲਈ <strong>ਅੱਪਡੇਟ ਸਥਾਪਤ ਕਰੋ</strong> ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> ਅਸੀਂ ਸਿਫ਼ਾਰਿਸ਼ ਕਰਦੇ ਹਾਂ</strong> ਕਿ ਤੁਸੀਂ ਨਵੇਂ ਸੰਸਕਰਣ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਪਹਿਲਾਂ <strong>ਡਾਟਾਬੇਸ ਅਤੇ ਫਾਈਲ</strong> ਬੈਕਅੱਪ ਲਓ।",
         "I have taken a backup of the database and files." => "ਮੈਂ ਡਾਟਾਬੇਸ ਅਤੇ ਫਾਈਲਾਂ ਦਾ ਬੈਕਅੱਪ ਲਿਆ ਹੈ।",
+        "Short Description" => "ਛੋਟੀ ਵੇਰਵਾ",
+        "Cylinder" => "ਸਿਲਿੰਡਰ",
+        "Other Product Service Charges" => "ਹੋਰ ਉਤਪਾਦ ਸੇਵਾ ਚਾਰਜਜ਼",        
 ];
 // Punjabi pan

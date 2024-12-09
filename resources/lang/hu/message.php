@@ -1939,5 +1939,8 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "A folytatáshoz frissítse a rendszert a legújabb verzióra. Kérjük, kattintson a <strong>Frissítés telepítése</strong> gombra a frissítési folyamat elindításához.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Javasoljuk</strong>, hogy az új verzióra való frissítés előtt készítsen biztonsági másolatot az <strong>adatbázisról és fájlról</strong>.",
 	"I have taken a backup of the database and files." => "Készítettem biztonsági másolatot az adatbázisról és a fájlokról.",
+    "Short Description" => "Rövid leírás",
+    "Cylinder" => "Henger",
+    "Other Product Service Charges" => "Egyéb termék szolgáltatási díjak",
 ];
 // Hungarian/hu

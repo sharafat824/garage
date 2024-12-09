@@ -1938,6 +1938,9 @@ return [
 	"Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Vui lòng cập nhật hệ thống lên phiên bản mới nhất để tiếp tục. Vui lòng nhấp vào nút <strong>Cài đặt bản cập nhật</strong> để bắt đầu quá trình cập nhật.",
 	"<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Chúng tôi khuyên bạn</strong> nên sao lưu <strong>cơ sở dữ liệu và tệp</strong> trước khi cập nhật lên phiên bản mới.",
 	"I have taken a backup of the database and files." => "Tôi đã sao lưu cơ sở dữ liệu và các tập tin.",
+	"Short Description" => "Mô tả ngắn",
+    "Cylinder" => "Xi lanh",
+    "Other Product Service Charges" => "Các khoản phí dịch vụ sản phẩm khác",
 
 ];
 	// Vietnamese/vie

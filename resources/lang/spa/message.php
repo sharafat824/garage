@@ -1602,5 +1602,8 @@ return [
         "Please update the system to the latest version to continue. Please click on the <strong>Install Update</strong> button to start the update process." => "Actualice el sistema a la última versión para continuar. Haga clic en el botón <strong>Instalar actualización</strong> para iniciar el proceso de actualización.",
         "<strong> We recommend</strong> that you take the <strong>database & file</strong> backup first before updating to the new version." => "<strong> Recomendamos</strong> que primero realice la copia de seguridad de la <strong>base de datos y archivos</strong> antes de actualizar a la nueva versión.",
         "I have taken a backup of the database and files." => "He realizado una copia de seguridad de la base de datos y los archivos.",
+        "Short Description" => "Descripción Corta",
+        "Cylinder" => "Cilindro",
+        "Other Product Service Charges" => "Otros Cargos por Servicios de Productos",
 ];
 // Castilian (Spanish) spa(Spanish)
