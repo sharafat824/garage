@@ -36,8 +36,9 @@ class Customercontroller extends Controller
 
 		$tbl_custom_fields = DB::table('tbl_custom_fields')->where([['form_name', '=', 'customer'], ['always_visable', '=', 'yes'], ['soft_delete', '=', 0]])->get()->toArray();
 		$setting= Setting::first();
+		$address = trim($setting->address);
 
-		return view('customer.add', compact('country', 'onlycustomer', 'tbl_custom_fields','setting'));
+		return view('customer.add', compact('country', 'onlycustomer', 'tbl_custom_fields','setting','address'));
 	}
 	//customer store
 	public function storecustomer(Request $request)

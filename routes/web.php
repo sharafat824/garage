@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -235,15 +237,15 @@ Route::group(['prefix' => 'taxrates'], function () {
 
 
 /*Services*/
-Route::group(['prefix' => 'other/service'], function () {
-	Route::get('list', ['as' => 'service/list', 'uses' => 'OtherServicesController@servicelist'])->middleware('can:service_view');
-	Route::get('view', ['as' => 'service/view', 'uses' => 'OtherServicesController@view'])->middleware('can:service_view');
-	Route::get('add', ['as' => 'service/add', 'uses' => 'OtherServicesController@add'])->middleware('can:service_add');
-	Route::post('store', ['as' => 'service/store', 'uses' => 'OtherServicesController@store'])->middleware('can:service_add');
-	Route::get('delete/{id}', ['uses' => 'OtherServicesController@destory'])->middleware('can:service_delete');
-	Route::post('list/delete', ['as' => 'service/list/delete', 'uses' => 'OtherServicesController@destroyMultiple'])->middleware('can:service_delete');
-	Route::get('/edit/{id}', ['as' => 'service/list/edit/{id}', 'uses' => 'OtherServicesController@serviceedit'])->middleware('can:service_edit');
-	Route::put('update/{id}', [ 'uses' => 'OtherServicesController@serviceupdate'])->middleware('can:service_edit');
+Route::group(['prefix' => 'service'], function () {
+	Route::get('list', ['as' => 'service/list', 'uses' => 'ServicesControler@servicelist'])->middleware('can:service_view');
+	Route::get('add', ['as' => 'service/add', 'uses' => 'ServicesControler@index'])->middleware('can:service_add');
+	Route::post('store', ['as' => 'service/store', 'uses' => 'ServicesControler@store'])->middleware('can:service_add');
+	Route::get('list/delete/{id}', ['as' => 'service/list/delete/{id}', 'uses' => 'ServicesControler@destory'])->middleware('can:service_delete');
+	Route::post('list/delete', ['as' => 'service/list/delete', 'uses' => 'ServicesControler@destroyMultiple'])->middleware('can:service_delete');
+	Route::get('list/edit/{id}', ['as' => 'service/list/edit/{id}', 'uses' => 'ServicesControler@serviceedit'])->middleware('can:service_edit');
+	Route::post('list/edit/update/{id}', ['as' => 'service/list/edit/update/{id}', 'uses' => 'ServicesControler@serviceupdate'])->middleware('can:service_edit');
+	Route::get('price/{id}', ['uses' => 'OtherServicesController@getPrice']);
 
 	Route::post('add_jobcard', 'ServicesControler@add_jobcard')->middleware('can:service_add');
 
@@ -531,14 +533,12 @@ Route::group(['prefix' => 'sales'], function () {
 	Route::get('/colortypedelete', 'Salescontroller@colordelete');
 });
 
-Route::get('service/price/{id}', ['uses' => 'OtherServicesController@getPrice']);
 
 //Job Card Module
 Route::group(['prefix' => 'jobcard'], function () {
 	Route::get('/list', ['as' => 'list/jobcard', 'uses' => 'JobCardcontroller@index'])->middleware('can:jobcard_view');/*Get Jobcard Listing Page*/
 	Route::get('/list/jview/{id}', ['as' => 'list/jview', 'uses' => 'JobCardcontroller@indexid']);
 	Route::get('/invoice', ['as' => 'list/invoice', 'uses' => 'JobCardcontroller@invoice']);
-	Route::get('add',['as' => 'jobcard/add', 'uses' =>'JobCardcontroller@jobcard_add'])->middleware('can:jobcard_add');
 
 	/*Display ProcessJob Form and Store data of this form*/
 	Route::get('/list/{id}', ['as' => 'viewjobcard', 'uses' => 'JobCardcontroller@view'])->middleware('can:jobcard_edit');/*Display ProcessJob Form(If click on ProcessJob Button on Listing Page)*/
@@ -554,6 +554,17 @@ Route::group(['prefix' => 'jobcard'], function () {
 	/*Store Gatepass Data*/
 	Route::post('/insert_gatedata', ['as' => 'jobcard/insert', 'uses' => 'JobCardcontroller@insert_gatepass_data'])->middleware('can:jobcard_edit');
 	Route::get('/list/add_invoice/{id}', 'JobCardcontroller@add_invoice');
+});
+
+Route::prefix('other/service')->group(function () {
+	Route::get('list', ['as' => 'service/list', 'uses' => 'OtherServicesController@servicelist'])->middleware('can:service_view');
+	Route::get('view', ['as' => 'service/view', 'uses' => 'OtherServicesController@view'])->middleware('can:service_view');
+	Route::get('add', ['as' => 'service/add', 'uses' => 'OtherServicesController@add'])->middleware('can:service_add');
+	Route::post('store', ['as' => 'service/store', 'uses' => 'OtherServicesController@store'])->middleware('can:service_add');
+	Route::get('delete/{id}', ['uses' => 'OtherServicesController@destory'])->middleware('can:service_delete');
+	Route::post('list/delete', ['as' => 'service/list/delete', 'uses' => 'OtherServicesController@destroyMultiple'])->middleware('can:service_delete');
+	Route::get('/edit/{id}', ['as' => 'service/list/edit/{id}', 'uses' => 'OtherServicesController@serviceedit'])->middleware('can:service_edit');
+	Route::put('update/{id}', ['uses' => 'OtherServicesController@serviceupdate'])->middleware('can:service_edit');
 });
 
 

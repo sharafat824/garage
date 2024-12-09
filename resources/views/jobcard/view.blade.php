@@ -448,6 +448,8 @@
                                             <thead>
                                                 <tr>
                                                     <th class="all">{{ trans('message.Service') }}</th>
+                                                    <th class="all">{{ trans('message.Short Description') }}</th>
+                                                    <th class="all">{{ trans('message.Cylinder') }}</th> 
                                                     <th class="all">{{ trans('message.Price') }}
                                                         (<?php echo getCurrencySymbols(); ?>)
                                                     </th>
@@ -933,7 +935,9 @@
         $(document).on('change', 'select[name="other_product[]"]', function() {
             var productId = $(this).val();
             var row = $(this).closest('tr'); // Get the row of the current product
-            var priceField = row.find('.other_service_price'); // Find the price field in this row
+            var priceField = row.find('.other_service_price'); 
+            var shortDesc = row.find('.other_service_description');
+            var cylinder = row.find('.other_service_cylinder');
 
             if (productId) {
                 $.ajax({
@@ -943,7 +947,8 @@
                         id: productId
                     },
                     success: function(response) {
-                        // Assuming the response is the price of the product
+                        shortDesc.val(response.short_description);
+                        cylinder.val(response.cylinder);
                         priceField.val(response.price);
                     }
                 });

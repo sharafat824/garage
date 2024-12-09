@@ -703,40 +703,52 @@ class JobCardcontroller extends Controller
 
 	// add products
 	public function addproducts(Request $request)
-{
-    $products = OtherServices::get();
-    $id = $request->row_id;
-    $ids = $id + 1;
-    $rowid = 'row_id_' . $ids;
-    ?>
-    
-    <tr id="<?php echo $rowid; ?>">
-        <td>
-            <!-- Replace input with a select dropdown -->
-            <select name="other_product[]" class="form-control other_service" data-row-id="<?php echo $rowid; ?>">
-                <option value="">Select a service</option>
-                <!-- Dynamically generate options for each product -->
-                <?php foreach ($products as $product) : ?>
-                    <option value="<?php echo $product->id; ?>" data-price="<?php echo $product->total_price; ?>">
-                        <?php echo $product->name; ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </td>
+	{
+		$products = OtherServices::get();
+		$id = $request->row_id;
+		$ids = $id + 1;
+		$rowid = 'row_id_' . $ids;
+		?>
+	
+		<tr id="<?php echo $rowid; ?>">
+			<td>
+				<!-- Replace input with a select dropdown -->
+				<select name="other_product[]" class="form-control other_service" data-row-id="<?php echo $rowid; ?>">
+					<option value="">Select a service</option>
+					<!-- Dynamically generate options for each product -->
+					<?php foreach ($products as $product) : ?>
+						<option value="<?php echo $product->id; ?>" data-price="<?php echo $product->total_price; ?>" data-description="<?php echo $product->short_description; ?>" data-cylinder="<?php echo $product->cylinder; ?>">
+							<?php echo $product->name; ?>
+						</option>
+					<?php endforeach; ?>
+				</select>
+			</td>
 
-        <td>
-            <input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
-        </td>
+			<!-- New column for Short Description -->
+			<td>
+				<input type="text" name="short_description[]" class="form-control other_service_description" id="oth_desc_<?php echo $ids; ?>" value="" maxlength="255">
+			</td>
+	
+			<!-- New column for Cylinder -->
+			<td>
+				<input type="text" name="cylinder[]" class="form-control other_service_cylinder" id="oth_cyl_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+			</td>
+	
+			<td>
+				<input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price_<?php echo $ids; ?>" value="" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+			</td>
 
-        <td class="text-center">
-            <span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
-                <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
-            </span>
-        </td>
-    </tr>
-
-<?php
-}
+	
+			<td class="text-center">
+				<span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
+					<i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+				</span>
+			</td>
+		</tr>
+	
+		<?php
+	}
+	
 
 	
 

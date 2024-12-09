@@ -105,6 +105,8 @@ class OtherServicesController extends Controller
             return response()->json([
                 'success' => true,
                 'price' => $product->price,
+                'short_description' => $product->short_description,
+                'cylinder' => $product->cylinder
             ]);
         } else {
             // Return an error response if the product is not found

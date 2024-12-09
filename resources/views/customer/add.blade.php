@@ -262,12 +262,17 @@
                 </select>
               </div>
             </div>
+            <?php
+            // $address = trim($setting->address);
+            $address = str_replace("\u00A0", ' ', $address);  // Replace non-breaking spaces with regular spaces
+            $address = preg_replace('/\s+/', ' ', $setting->address); // Normalize all spaces (convert multiple spaces to a single space)
 
+            ?>
             <div class="row col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-6 col-xs-6 form-group my-form-group has-feedback {{ $errors->has('address') ? ' has-error' : '' }}">
               <label class="control-label col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-4 col-xs-4" for="address">{{ trans('message.Address') }} <label class="color-danger">*</label></label>
               <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-8 col-sm-8 col-xs-8">
                 <textarea class="form-control addressTextarea" id="address" name="address" maxlength="100">
-                {{ old('address', $setting->address) }}
+                {{{$address}}}
                 </textarea>
 
                 @if ($errors->has('address'))
@@ -391,7 +396,21 @@
 
 <!-- Scripts starting -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the textarea element by its ID
+        const addressTextarea = document.getElementById('address');
+        
+        // Get the value that was pre-populated from the database
+        let addressValue = addressTextarea.value;
+        
+        // Remove leading spaces (trim the beginning of the string)
+        addressValue = addressValue.replace(/^\s+/, '');
+        
+        // Set the cleaned value back to the textarea
+        addressTextarea.value = addressValue;
+    });
+</script>
 <script>
   $(document).ready(function() {
     function autoSelect() {

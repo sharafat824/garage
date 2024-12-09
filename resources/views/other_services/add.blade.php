@@ -13,7 +13,7 @@
             <nav>
                 <div class="nav toggle">
                     <a id="menu_toggle"><i class="fa fa-bars sidemenu_toggle"></i></a>
-                    <a href="{{ url('/service/list') }}">
+                    <a href="{{ url('/other/service/list') }}">
                         <i class="fa fa-arrow-left"></i>
                         <span class="titleup">{{ trans('message.Add Services') }}</span>
                     </a>
