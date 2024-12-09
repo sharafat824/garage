@@ -80,15 +80,15 @@
                     <li role="presentation" class=""><a href="{!! url('/jobcard/list') !!}"><span
                                 class="visible-xs"></span><i class="fa fa-list fa-lg">&nbsp;</i>{{ trans('message.List
                             Of Job Cards') }}</span></a>
-                    </li>
-                    @endcan
-                    @can('jobcard_edit')
-                    <li role="presentation" class="active"><a href="{!! url('/jobcard/list/' . $services->id) !!}"
-                            class="process"><span class="visible-xs"></span><i
-                                class="fa fa-plus-circle fa-lg i">&nbsp;</i><b>{{ trans('message.Process JobCard')
+                </li>
+                @endcan
+                @can('jobcard_edit')
+                <li role="presentation" class="active"><a href="{!! url('/jobcard/list/' . $services->id) !!}"
+                        class="process"><span class="visible-xs"></span><i
+                            class="fa fa-plus-circle fa-lg i">&nbsp;</i><b>{{ trans('message.Process JobCard')
                                 }}</b></span></a>
-                    </li>
-                    @endcan
+                </li>
+                @endcan
                 </ul> --}}
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-sm-12 col-xs-12">
@@ -174,8 +174,8 @@
                                                 --}}
                                                 <input type="text" id="out_date" name="out_date" autocomplete="off"
                                                     value="<?php if (!empty($job->out_date)) {
-                                                                                                                                echo date(getDateFormat() . ' H:i:s', strtotime($job->out_date));
-                                                                                                                            } ?>"
+                                                                echo date(getDateFormat() . ' H:i:s', strtotime($job->out_date));
+                                                            } ?>"
                                                     class="form-control outDateValue datepicker"
                                                     placeholder="<?php echo getDatetimepicker(); ?>" required>
                                             </div>
@@ -192,9 +192,9 @@
                                                 <input type="text" min='' pattern="\d*" maxlength="10" id="kms"
                                                     name="kms"
                                                     value="<?php if (!empty($job)) {
-                                                                                                                                        echo "
+                                                                echo "
                                                     $job->kms_run";
-                                                } ?>" class="form-control kilometre" required>
+                                                            } ?>" class="form-control kilometre" required>
                                             </div>
                                         </div>
                                     </div>
@@ -219,10 +219,12 @@
                                                 </option>
                                                 @if (!empty($employees))
                                                 @foreach ($employees as $employee)
-                                                <option value="{{ $employee->id }}" <?php if ($services->assign_to ==
-                                                    $employee->id) {
-                                                    echo 'selected';
-                                                    } ?>>
+                                                <option value="{{ $employee->id }}" <?php if (
+                                                                                        $services->assign_to ==
+                                                                                        $employee->id
+                                                                                    ) {
+                                                                                        echo 'selected';
+                                                                                    } ?>>
                                                     {{ $employee->name }}
                                                 </option>
                                                 @endforeach
@@ -350,7 +352,7 @@
                                                 <input type="text" id="coupan_no" name="coupan_no" value="<?php if (!empty($job)) {
                                                                                                                 echo "
                                                     $job->coupan_no";
-                                                } ?>" class="form-control" readonly>
+                                                                                                            } ?>" class="form-control" readonly>
                                             </div>
                                             <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-6 col-xs-6">
                                             </div>
@@ -434,134 +436,134 @@
                                                         <?php $i = 1; ?>
                                                         <?php if ($data == []) {
                                                         ?>
-                                                        <!-- <tr>
+                                                            <!-- <tr>
                                                                 <td class="cname text-center" colspan="9">
                                                                     {{ trans('message.No data available in table.') }}
                                                                 </td>
                                                             </tr> -->
-                                                        <?php
+                                                            <?php
                                                         } else {
                                                             foreach ($data as $datas) { ?>
-                                                        <tr class="obs_point_data"
-                                                            id="<?php echo 'row_id_delete_' . $i; ?>">
-                                                            <td>
-                                                                <input type="text" name="product2[category][]"
-                                                                    class="form-control"
-                                                                    value="<?php echo $datas->checkout_subpoints; ?>"
-                                                                    readonly="true">
-                                                                <input type="hidden" name="pro_id_delete"
-                                                                    class="del_pro_<?php echo $i; ?>"
-                                                                    id="del_pro_<?php echo $i; ?>"
-                                                                    value="<?php echo $datas->id; ?>">
-                                                            </td>
+                                                                <tr class="obs_point_data"
+                                                                    id="<?php echo 'row_id_delete_' . $i; ?>">
+                                                                    <td>
+                                                                        <input type="text" name="product2[category][]"
+                                                                            class="form-control"
+                                                                            value="<?php echo $datas->checkout_subpoints; ?>"
+                                                                            readonly="true">
+                                                                        <input type="hidden" name="pro_id_delete"
+                                                                            class="del_pro_<?php echo $i; ?>"
+                                                                            id="del_pro_<?php echo $i; ?>"
+                                                                            value="<?php echo $datas->id; ?>">
+                                                                    </td>
 
-                                                            <td>
-                                                                <input type="text" name="product2[sub_points][]"
-                                                                    class="form-control"
-                                                                    value="<?php echo $datas->checkout_point; ?>"
-                                                                    readonly="true">
-                                                            </td>
+                                                                    <td>
+                                                                        <input type="text" name="product2[sub_points][]"
+                                                                            class="form-control"
+                                                                            value="<?php echo $datas->checkout_point; ?>"
+                                                                            readonly="true">
+                                                                    </td>
 
-                                                            <td>
-                                                                <input type="number" name="product2[service_charge][]"
-                                                                    value="<?php echo $datas->service_charge; ?>"
-                                                                    class="form-control charge charge_{{ $i }}"
-                                                                    row_id="{{ $i }}" maxlength="8">
-                                                            </td>
+                                                                    <td>
+                                                                        <input type="number" name="product2[service_charge][]"
+                                                                            value="<?php echo $datas->service_charge; ?>"
+                                                                            class="form-control charge charge_{{ $i }}"
+                                                                            row_id="{{ $i }}" maxlength="8">
+                                                                    </td>
 
-                                                            <td>
-                                                                <select name="product2[product_id][]"
-                                                                    class="form-control product_ids product1s_{{ $i }} form-select"
-                                                                    url="{{ url('/jobcard/getprice') }}"
-                                                                    row_did="{{ $i }}" id="product1s_{{ $i }}"
-                                                                    qtyappend="">
-                                                                    <option value="">
-                                                                        {{ trans('message.Select ') }}
-                                                                    </option>
-                                                                    <?php foreach ($product as $products) {
+                                                                    <td>
+                                                                        <select name="product2[product_id][]"
+                                                                            class="form-control product_ids product1s_{{ $i }} form-select"
+                                                                            url="{{ url('/jobcard/getprice') }}"
+                                                                            row_did="{{ $i }}" id="product1s_{{ $i }}"
+                                                                            qtyappend="">
+                                                                            <option value="">
+                                                                                {{ trans('message.Select ') }}
+                                                                            </option>
+                                                                            <?php foreach ($product as $products) {
                                                                                 if ($products->id == $datas->product_id) {
                                                                                     $is_select = "selected";
                                                                                 } else {
                                                                                     $is_select = "";
                                                                                 }
                                                                             ?>
-                                                                    <option value="<?php echo $products->id; ?>" <?php
-                                                                        echo $is_select; ?>>
-                                                                        <?php echo $products->name; ?>
-                                                                    </option>
-                                                                    <?php } ?>
-                                                                </select>
-                                                            </td>
+                                                                                <option value="<?php echo $products->id; ?>" <?php
+                                                                                                                                echo $is_select; ?>>
+                                                                                    <?php echo $products->name; ?>
+                                                                                </option>
+                                                                            <?php } ?>
+                                                                        </select>
+                                                                    </td>
 
-                                                            <td>
-                                                                @if (!empty($products))
-                                                                <input type="text" name="product2[price][]"
-                                                                    value="<?php if (!empty($data)) {
-                                                                                                                                echo $datas->price;
-                                                                                                                            } ?>"
-                                                                    value="<?php echo $products->price; ?>"
-                                                                    class="form-control prices rate product1_<?php echo $i; ?> product1_<?php echo $i; ?> price_<?php echo $i; ?>"
-                                                                    id="product1_<?php echo $i; ?>" row_id="{{ $i }}"
-                                                                    maxlength="8"
-                                                                    onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
-                                                                @endif
-                                                            </td>
+                                                                    <td>
+                                                                        @if (!empty($products))
+                                                                        <input type="text" name="product2[price][]"
+                                                                            value="<?php if (!empty($data)) {
+                                                                                        echo $datas->price;
+                                                                                    } ?>"
+                                                                            value="<?php echo $products->price; ?>"
+                                                                            class="form-control prices rate product1_<?php echo $i; ?> product1_<?php echo $i; ?> price_<?php echo $i; ?>"
+                                                                            id="product1_<?php echo $i; ?>" row_id="{{ $i }}"
+                                                                            maxlength="8"
+                                                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                                                        @endif
+                                                                    </td>
 
-                                                            <td>
-                                                                <input type="text"
-                                                                    oninput="this.value = Math.abs(this.value)"
-                                                                    name="product2[qty][]"
-                                                                    class="form-control qtyt qnt_<?php echo $i; ?> <?php echo 'qty_' . $i; ?>"
-                                                                    row_id1="<?php echo $i; ?>"
-                                                                    value="<?php if (!empty($data)) {
-                                                                                                                                                                                                                                                                                echo $datas->quantity;
-                                                                                                                                                                                                                                                                            } ?>"
-                                                                    url="<?php echo url('/jobcard/gettotalprice'); ?>"
-                                                                    id="<?php echo 'qty_' . $i; ?>"
-                                                                    style="width:100%;float:left;">
-                                                                <!-- <span class="unit_<?php echo $i; ?>"></span> -->
-                                                            </td>
+                                                                    <td>
+                                                                        <input type="text"
+                                                                            oninput="this.value = Math.abs(this.value)"
+                                                                            name="product2[qty][]"
+                                                                            class="form-control qtyt qnt_<?php echo $i; ?> <?php echo 'qty_' . $i; ?>"
+                                                                            row_id1="<?php echo $i; ?>"
+                                                                            value="<?php if (!empty($data)) {
+                                                                                        echo $datas->quantity;
+                                                                                    } ?>"
+                                                                            url="<?php echo url('/jobcard/gettotalprice'); ?>"
+                                                                            id="<?php echo 'qty_' . $i; ?>"
+                                                                            style="width:100%;float:left;">
+                                                                        <!-- <span class="unit_<?php echo $i; ?>"></span> -->
+                                                                    </td>
 
-                                                            <td>
-                                                                <input type="text" name="product2[total][]"
-                                                                    value="<?php if (!empty($data)) {
-                                                                                                                                echo $datas->total_price;
-                                                                                                                            } ?>" value="0"
-                                                                    class="form-control total1 total1_<?php echo $i; ?>"
-                                                                    id="total1_<?php echo $i; ?>" readonly="true" />
-                                                            </td>
+                                                                    <td>
+                                                                        <input type="text" name="product2[total][]"
+                                                                            value="<?php if (!empty($data)) {
+                                                                                        echo $datas->total_price;
+                                                                                    } ?>" value="0"
+                                                                            class="form-control total1 total1_<?php echo $i; ?>"
+                                                                            id="total1_<?php echo $i; ?>" readonly="true" />
+                                                                    </td>
 
-                                                            <td>
-                                                                {{ trans('message.Yes:') }} <input type="radio"
-                                                                    name="yesno_[]<?php echo $i; ?>" class="yes_no"
-                                                                    value="1" <?php if ($datas->chargeable == 1) {
-                                                                echo 'checked';
-                                                                } ?> style=" height:13px; width:20px;
+                                                                    <td>
+                                                                        {{ trans('message.Yes:') }} <input type="radio"
+                                                                            name="yesno_[]<?php echo $i; ?>" class="yes_no"
+                                                                            value="1" <?php if ($datas->chargeable == 1) {
+                                                                                            echo 'checked';
+                                                                                        } ?> style=" height:13px; width:20px;
                                                                 margin-right:5px;">
 
-                                                                {{ trans('message.No:') }} <input type="radio"
-                                                                    name="yesno_[]<?php echo $i; ?>" class="yes_no"
-                                                                    value="0" <?php if ($datas->chargeable == 0) {
-                                                                echo 'checked';
-                                                                } ?> style="height:13px; width:20px;">
-                                                            </td>
-                                                            <td>
-                                                                <textarea name="product2[comment][]"
-                                                                    class="form-control"
-                                                                    maxlength="250">{{ $datas->category_comments }}</textarea>
-                                                            </td>
-                                                            <td class="text-center">
-                                                                <i class="fa fa-trash fa-2x delete"
-                                                                    style="cursor: pointer;"
-                                                                    data_id_trash="<?php echo $i; ?>"
-                                                                    delete_data_url=" <?php echo url('/jobcard/delete_on_reprocess'); ?>"
-                                                                    service_id="<?php echo $viewid; ?>"></i>
-                                                                <input type="hidden" name="obs_id[]"
-                                                                    class="form-control"
-                                                                    value="<?php echo $datas->id; ?>">
-                                                            </td>
-                                                        </tr>
-                                                        <?php $i++; ?>
+                                                                        {{ trans('message.No:') }} <input type="radio"
+                                                                            name="yesno_[]<?php echo $i; ?>" class="yes_no"
+                                                                            value="0" <?php if ($datas->chargeable == 0) {
+                                                                                            echo 'checked';
+                                                                                        } ?> style="height:13px; width:20px;">
+                                                                    </td>
+                                                                    <td>
+                                                                        <textarea name="product2[comment][]"
+                                                                            class="form-control"
+                                                                            maxlength="250">{{ $datas->category_comments }}</textarea>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <i class="fa fa-trash fa-2x delete"
+                                                                            style="cursor: pointer;"
+                                                                            data_id_trash="<?php echo $i; ?>"
+                                                                            delete_data_url=" <?php echo url('/jobcard/delete_on_reprocess'); ?>"
+                                                                            service_id="<?php echo $viewid; ?>"></i>
+                                                                        <input type="hidden" name="obs_id[]"
+                                                                            class="form-control"
+                                                                            value="<?php echo $datas->id; ?>">
+                                                                    </td>
+                                                                </tr>
+                                                                <?php $i++; ?>
                                                         <?php }
                                                         } ?>
                                                     </tbody>
@@ -737,8 +739,7 @@
                                                         {{ trans('message.Wash Bay') }}
                                                     </td>
                                                     <td>
-                                                        <!-- <input type="text" name="washbayCharge" class="form-control" id="" value="{{ $washbay_data->price }}" > -->
-                                                        {{ $washbay_data->price }}
+                                                        <input readonly type="text" name="washbayCharge" class="form-control" id="washbayCharge" value="{{ $washbay_data->price }}">
                                                     </td>
                                                     <td>
                                                         @if ($washbay_data->initiate_status == 0)
@@ -786,6 +787,12 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                            <label for="">Total</label>
+                                            <input readonly type="text" class="form-control" id="totalPrice">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 @endif
@@ -810,77 +817,77 @@
                                                     <?php
                                                     if (getDataFromCheckoutCategorie($checkoout->checkout_point, $checkoout->vehicle_id) != null) {
                                                     ?>
-                                                    <div class="panel-group">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">
-                                                                    <a data-bs-toggle="collapse"
-                                                                        href="#collapse1-{{ $checkoout->id }}"
-                                                                        class="ob_plus{{ $checkoout->id }}"><i
-                                                                            class="fa fa-plus"></i>
-                                                                        {{ $checkoout->checkout_point }}</a>
-                                                                </h4>
-                                                            </div>
-                                                            <div id="collapse1-{{ $checkoout->id }}"
-                                                                class="panel-collapse collapse">
-                                                                <div class="panel-body">
-                                                                    <table class="table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <b>#</b>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <b>{{ trans('message.Checkpoints')
+                                                        <div class="panel-group">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-bs-toggle="collapse"
+                                                                            href="#collapse1-{{ $checkoout->id }}"
+                                                                            class="ob_plus{{ $checkoout->id }}"><i
+                                                                                class="fa fa-plus"></i>
+                                                                            {{ $checkoout->checkout_point }}</a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapse1-{{ $checkoout->id }}"
+                                                                    class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <table class="table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <b>#</b>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <b>{{ trans('message.Checkpoints')
                                                                                         }}</b>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <b>{{ trans('message.Choose') }}</b>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <?php
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <b>{{ trans('message.Choose') }}</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <?php
                                                                                 $i = 1;
                                                                                 $subcategory = getCheckPointSubCategory($checkoout->checkout_point, $checkoout->vehicle_id);
                                                                                 if (!empty($subcategory)) {
                                                                                     foreach ($subcategory as $subcategorys) { ?>
-                                                                            <tr
-                                                                                class="id{{ $subcategorys->checkout_point }}">
-                                                                                <td class="col-md-1">
-                                                                                    <?php echo $i++; ?>
-                                                                                </td>
-                                                                                <td
-                                                                                    class="row{{ $subcategorys->checkout_point }} col-md-4">
-                                                                                    <?php echo $subcategorys->checkout_point;
+                                                                                        <tr
+                                                                                            class="id{{ $subcategorys->checkout_point }}">
+                                                                                            <td class="col-md-1">
+                                                                                                <?php echo $i++; ?>
+                                                                                            </td>
+                                                                                            <td
+                                                                                                class="row{{ $subcategorys->checkout_point }} col-md-4">
+                                                                                                <?php echo $subcategorys->checkout_point;
                                                                                                 //echo $subcategorys->id;
                                                                                                 ?>
-                                                                                    <?php $data = getCheckedStatus($subcategorys->id, $services->id); ?>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <input type="checkbox" <?php echo
-                                                                                        $data; ?> name="chek_sub_points"
-                                                                                    name="check_sub_points[]"
-                                                                                    check_id="{{ $subcategorys->id }}"
-                                                                                    class="check_pt" url="{!!
+                                                                                                <?php $data = getCheckedStatus($subcategorys->id, $services->id); ?>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="checkbox" <?php echo
+                                                                                                                        $data; ?> name="chek_sub_points"
+                                                                                                    name="check_sub_points[]"
+                                                                                                    check_id="{{ $subcategorys->id }}"
+                                                                                                    class="check_pt" url="{!!
                                                                                     url('jobcard/select_checkpt') !!}"
-                                                                                    s_id="{{ getServiceId($services->id)
+                                                                                                    s_id="{{ getServiceId($services->id)
                                                                                     }}" sale_id="{{ $services->id }}"
-                                                                                    sub_pt="{{
+                                                                                                    sub_pt="{{
                                                                                     $subcategorys->checkout_point }}"
-                                                                                    main_cat="{{
+                                                                                                    main_cat="{{
                                                                                     $checkoout->checkout_point }}">
-                                                                                </td>
-                                                                            </tr>
-                                                                            <?php }
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                <?php }
                                                                                 } ?>
-                                                                        </tbody>
-                                                                    </table>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
 
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                     <?php
                                                     }
                                                     ?>
@@ -925,10 +932,10 @@
 <!-- /page content -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function () {
-
+    $(document).ready(function() {
+        $('#totalPrice').val($('#washbayCharge').val());
         var a = 0
-        $('.ob_plus').click(function () {
+        $('.ob_plus').click(function() {
             a = a + 1;
             if (a % 2 != 0) {
                 $(this).parent().find(".fa-plus:first").removeClass("fa-plus").addClass(
@@ -939,7 +946,7 @@
             }
         });
 
-        $('body').on('click', '.addJobcardSubmitButton', function (e) {
+        $('body').on('click', '.addJobcardSubmitButton', function(e) {
             var msg6 = "{{ trans('message.Please add Observation Points.') }}";
             var msg9 = "{{ trans('message.OK') }}";
 
@@ -972,7 +979,7 @@
             // }
             return true;
         });
-        $('body').on('change', '#AssigneTo', function () {
+        $('body').on('change', '#AssigneTo', function() {
             var assign_to = $('#AssigneTo').val();
             if (assign_to === "") {
                 $('#common_error_span').css({
@@ -985,7 +992,7 @@
             }
         });
         var i = 0;
-        $('.observation_Plus').click(function () {
+        $('.observation_Plus').click(function() {
             i = i + 1;
             if (i % 2 != 0) {
                 $(this).parent().find(".fa-plus:first").removeClass("fa-plus").addClass(
@@ -997,13 +1004,13 @@
             }
         });
 
-        $('.tbl_points, .check_submit').click(function () {
+        $('.tbl_points, .check_submit').click(function() {
 
             var url = "<?php echo url('jobcard/get_obs'); ?>";
             var service_id = $('.service_id').val();
 
             var modifiedData = [];
-            $('.obs_point_data').each(function (index) {
+            $('.obs_point_data').each(function(index) {
                 var id = $(this).find('[name="pro_id_delete"]').val();
 
                 var checkout_subpoints = $(this).find('[name="product2[category][]"]').val();
@@ -1040,18 +1047,18 @@
                     service_id: service_id,
                     modifiedData: modifiedData
                 },
-                success: function (response) {
+                success: function(response) {
                     jQuery('.main_data').html(response.html);
                     jQuery('.modal').modal('hide');
                     // window.location.reload();
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
         });
 
-        $('input.check_pt[type="checkbox"]').click(function () {
+        $('input.check_pt[type="checkbox"]').click(function() {
 
             if ($(this).prop("checked") == true) {
                 var value = 1;
@@ -1079,8 +1086,8 @@
                         main_cat: main_cat,
                         sub_pt: sub_pt
                     },
-                    success: function (response) { },
-                    error: function (e) {
+                    success: function(response) {},
+                    error: function(e) {
                         alert(msg8 + ' : ' + e)
                     }
                 });
@@ -1099,7 +1106,7 @@
 
 
 
-        $('.sa-warning').click(function () {
+        $('.sa-warning').click(function() {
 
             var url = $(this).attr('url');
 
@@ -1121,7 +1128,7 @@
             });
         });
 
-        $('.observationclik').click(function () {
+        $('.observationclik').click(function() {
 
             var observation = $('.observation').val();
             var checkpoint = $('.checkpoint').val();
@@ -1134,11 +1141,11 @@
                     observation: observation,
                     checkpoint: checkpoint
                 },
-                success: function (response) { },
+                success: function(response) {},
             });
         });
 
-        $('.pointcomment').click(function () {
+        $('.pointcomment').click(function() {
 
             var co_point = $(this).attr('point_id');
             var s_id = $(this).attr('s_id');
@@ -1156,14 +1163,13 @@
                     s_id: s_id,
                     yesno: yesno
                 },
-                success: function (response) {
+                success: function(response) {
 
                 },
             });
         });
 
-        $("#add_new_product").click(function () {
-
+        $("#add_new_product").click(function() {
             var row_id = $("#tab_products_detail > tbody > tr").length;
             var url = $(this).attr('url');
 
@@ -1173,32 +1179,27 @@
                 data: {
                     row_id: row_id
                 },
-                beforeSend: function () {
+                beforeSend: function() {
                     $("#add_new_product").prop('disabled', true);
                 },
-                success: function (response) {
+                success: function(response) {
                     $("#tab_products_detail > tbody").append(response);
                     $("#add_new_product").prop('disabled', false);
                     return false;
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
         });
 
-        $('body').on('click', '.trash_product', function () {
-
-            var row_id = $(this).attr('data-id');
-
-            $('table#tab_products_detail tr#row_id_' + row_id).fadeOut();
-            return false;
-        });
-
-        $(document).on('change', 'select[name="other_product[]"]', function () {
-            var productId = $(this).val();
-            var row = $(this).closest('tr'); // Get the row of the current product
-            var priceField = row.find('.other_service_price');
+        let selectedProducts = [];
+        $(document).on('change', 'select[name="other_product[]"]', function() {
+            var $this = $(this); // Save a reference to the current element
+            var productId = $this.val();
+            var productDataId = $this.data('id');
+            var row = $this.closest('tr'); // Get the row of the current product
+            var priceField = row.find('.other_price'); // Find the price field in the current row
 
             if (productId) {
                 $.ajax({
@@ -1207,22 +1208,106 @@
                     data: {
                         product_id: productId
                     },
-                    success: function (response) {
-                        if (response[0]) {
-                            priceField.val(response[0]);
-                        }else{
-                            console.error('price not fetched!');
+                    success: function(response) {
+                        if (response[0]) { // Assuming response[0] contains the price
+                            var price = parseFloat(response[0]);
+
+                            // Update the price field
+                            priceField.val(price);
+
+                            // Add product ID to selectedProducts if not already present
+                            if (!selectedProducts.includes(productDataId)) {
+                                selectedProducts.push(productDataId);
+
+                                // Update washbayCharge by adding the price
+                                var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+                                $('#totalPrice').val((price + washbayCharge).toFixed(2));
+                            }
+
+                        } else {
+                            console.error('Price not fetched!');
                         }
+                    },
+                    error: function() {
+                        console.error('Failed to fetch price.');
                     }
                 });
-            } else {
-                priceField.val(''); // Clear price field if no product is selected
             }
         });
 
 
+        $('body').on('click', '.trash_product', function() {
+            var rowId = $(this).attr('data-id');
+            var row = $('table#tab_products_detail tr#row_id_' + rowId);
+            var priceField = row.find('.other_price');
+            var price = parseFloat(priceField.val()) || 0;
 
-        $('body').on('change', '.product_id', function () {
+            // Subtract price from washbayCharge
+            var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+            $('#totalPrice').val((washbayCharge - price).toFixed(2));
+
+
+            // Remove the product from selectedProducts
+            selectedProducts = selectedProducts.filter(function(id) {
+                return id.toString() !== rowId.toString(); // Ensure type consistency
+            });
+
+
+            // Remove the row from the table
+            row.fadeOut(function() {
+                row.remove(); // Fully remove the row after animation
+            });
+
+            return false;
+        });
+
+
+        // $(document).on('change', 'select[name="other_product[]"]', function () {
+        //     var $this = $(this); // Save a reference to the current element
+        //     var productId = $this.val();
+        //     var productDataId = $this.data('id');
+        //     var row = $this.closest('tr'); // Get the row of the current product
+        //     var priceField = row.find('.other_service_price'); // Find the price field in the current row
+
+        //     if (productId) {
+        //         $.ajax({
+        //             url: '/jobcard/getprice', // Define the URL that will return the product price
+        //             method: 'GET',
+        //             data: {
+        //                 product_id: productId
+        //             },
+        //             success: function (response) {
+        //                 if (response[0]) { // Assuming response[0] contains the price
+        //                     var price = parseFloat(response[0]);
+
+        //                     // Update the price field
+        //                     priceField.val(price);
+
+        //                     // Add product ID to selectedProducts if not already present
+        //                     if (!selectedProducts.includes(productDataId)) {
+        //                         selectedProducts.push(productDataId);
+
+        //                         // Update washbayCharge by adding the price
+        //                         var washbayCharge = parseFloat($('#washbayCharge').val()) || 0;
+        //                         $('#washbayCharge').val((price + washbayCharge).toFixed(2));
+        //                     }
+
+        //                     console.log('Price:', price);
+        //                     console.log('Selected Products:', selectedProducts);
+        //                 } else {
+        //                     console.error('Price not fetched!');
+        //                 }
+        //             },
+        //             error: function () {
+        //                 console.error('Failed to fetch price.');
+        //             }
+        //         });
+        //     }
+        // });
+
+
+
+        $('body').on('change', '.product_id', function() {
 
             var row_id = $(this).attr('row_did');
 
@@ -1235,18 +1320,17 @@
                 data: {
                     product_id: product_id
                 },
-                success: function (response) {
+                success: function(response) {
                     $('#product_' + row_id).attr('value', response);
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
         });
-        $("#add_new_service").click(function () {
+        $("#add_new_service").click(function() {
 
             var row_id = $("#tab_services_detail > tbody > tr").length;
-            console.log(row_id);
             var url = $(this).attr('url');
 
             $.ajax({
@@ -1255,55 +1339,85 @@
                 data: {
                     row_id: row_id
                 },
-                beforeSend: function () {
+                beforeSend: function() {
                     $("#add_new_service").prop('disabled', true);
                 },
-                success: function (response) {
+                success: function(response) {
                     $("#tab_services_detail > tbody").append(response);
                     $("#add_new_service").prop('disabled', false);
                     return false;
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
         });
 
-        $('body').on('click', '.trash_service', function () {
+        $('body').on('click', '.trash_service', function() {
 
-            var row_id = $(this).attr('data-id');
+            var rowId = $(this).attr('data-id');
+            var row = $('table#tab_services_detail tr#row_id_' + rowId);
+            var priceField = row.find('.other_service_price');
+            var price = parseFloat(priceField.val()) || 0;
 
-            $('table#tab_services_detail tr#row_service_id_' + row_id).fadeOut();
+            // Subtract price from washbayCharge
+            var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+            $('#totalPrice').val((washbayCharge - price).toFixed(2));
+
+            $('table#tab_services_detail tr#row_service_id_' + rowId).fadeOut();
+
+            selectedServices = selectedServices.filter(function(id) {
+                return id.toString() !== rowId.toString(); // Ensure type consistency
+            });
+
+            row.fadeOut(function() {
+                row.remove(); // Fully remove the row after animation
+            });
+
             return false;
         });
 
-        $(document).on('change', 'select[name="other_service_name[]"]', function () {
-            var productId = $(this).val();
-            var row = $(this).closest('tr'); // Get the row of the current product
+        let selectedServices = [];
+
+        // Handle service selection
+        $(document).on('change', 'select[name="other_service_name[]"]', function() {
+            var $this = $(this); // Save a reference to the current element
+            var serviceId = $this.val(); // Selected service ID
+            var row = $this.closest('tr'); // Current row
             var priceField = row.find('.other_service_price');
             var shortDesc = row.find('.other_short_desc');
             var cylinder = row.find('.other_service_cylinder');
+            var rowId = $this.data('id'); // Unique row ID for the service
+            var priceField = row.find('.other_service_price');
 
-            if (productId) {
+            if (serviceId) {
                 $.ajax({
-                    url: '/service/price/' + productId, // Define the URL that will return the product price
+                    url: '/service/price/' + serviceId,
                     method: 'GET',
                     data: {
-                        id: productId
+                        id: serviceId
                     },
-                    success: function (response) {
+                    success: function(response) {
                         shortDesc.val(response.short_description);
                         cylinder.val(response.cylinder);
                         priceField.val(response.price);
+
+                        // Add to selectedServices if not already present
+                        if (!selectedServices.includes(rowId)) {
+                            selectedServices.push(rowId);
+                            var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+                            $('#totalPrice').val((response.price + washbayCharge).toFixed(2));
+                        }
+
+                    },
+                    error: function() {
+                        console.error('Failed to fetch service details.');
                     }
                 });
-            } else {
-                priceField.val(''); // Clear price field if no product is selected
-            }
+            } 
         });
 
-
-        $('body').on('keyup', '.qty', function () {
+        $('body').on('keyup', '.qty', function() {
 
             var row_id = $(this).attr('row_id');
             var qty = $(this).val();
@@ -1317,20 +1431,20 @@
                     qty: qty,
                     price: price
                 },
-                success: function (response) {
+                success: function(response) {
                     $('#total_' + row_id).attr('value', response);
                 },
-                beforeSend: function () {
+                beforeSend: function() {
 
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
         });
 
-        $(function () {
-            $('#Selectvehicle').change(function () {
+        $(function() {
+            $('#Selectvehicle').change(function() {
 
                 var vehicleid = $(this).val();
                 var url = $(this).attr('url');
@@ -1341,11 +1455,11 @@
                     data: {
                         vehicleid: vehicleid
                     },
-                    success: function (response) {
+                    success: function(response) {
                         var res_vehicle = jQuery.parseJSON(response);
                         $('.point').attr('value', res_vehicle.checkout_point);
                     },
-                    error: function (e) {
+                    error: function(e) {
                         console.log(e);
                     }
                 });
@@ -1360,11 +1474,11 @@
         });
 
 
-        $('body').on('change', '.product_ids', function () {
+        $('body').on('change', '.product_ids', function() {
             var stock = $(this).find(":selected").attr('currnent');
         });
 
-        $('body').on('click', '.delete', function () {
+        $('body').on('click', '.delete', function() {
 
             var row_id = $(this).attr("data_id_trash");
             var delete_url = $(this).attr("delete_data_url");
@@ -1382,20 +1496,20 @@
                     service_id: service_id,
                     del_pro: del_pro
                 },
-                success: function (response) {
+                success: function(response) {
                     $('#row_id_delete_' + row_id).remove();
 
                     if (current_tr == 2) {
                         window.location.reload()
                     }
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
         });
 
-        $('body').on('click', '.trash_product', function () {
+        $('body').on('click', '.trash_product', function() {
 
             var row_id = $(this).attr("data-id");
             var del_oth_pro = $('#othr_prod_' + row_id).attr('othr_prod');
@@ -1407,19 +1521,19 @@
                 data: {
                     del_oth_pro: del_oth_pro
                 },
-                success: function (response) {
+                success: function(response) {
                     if (response == 1) {
                         $('.othr_prod_' + row_id).val(null);
                         $('.othr_price_' + row_id).val(null);
                     }
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
             $('#row_id_' + row_id).fadeOut();
         });
-        $('body').on('change', '.product_ids', function () {
+        $('body').on('change', '.product_ids', function() {
 
             var row_id = $(this).attr('row_did');
             var product_id = $(this).val();
@@ -1439,7 +1553,7 @@
                     product_id: product_id,
                     serviceCharge: serviceCharge
                 },
-                success: function (response) {
+                success: function(response) {
                     if (qt != '') {
                         var ttl = qt * response[0];
                         jQuery('.total1_' + row_id).val(ttl);
@@ -1450,19 +1564,19 @@
                     $('.qnt_' + row_id).val('1');
                     jQuery('.total1_' + row_id).val(response[1]);
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
         });
 
-        $('.qtyt').keypress(function (event) {
+        $('.qtyt').keypress(function(event) {
             if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event
-                .which > 57)) {
+                    .which > 57)) {
                 event.preventDefault();
             }
         });
-        $('body').on('blur', '.qtyt', function () {
+        $('body').on('blur', '.qtyt', function() {
 
             var row_id = $(this).attr('row_id1');
             var productid = $('.product1s_' + row_id).find(":selected").val();
@@ -1481,7 +1595,7 @@
                     price: price,
                     productid: productid
                 },
-                success: function (response) {
+                success: function(response) {
                     if (response.success == '1') {
                         swal({
                             title: msg5 + '\n' + msg6 + ' ' + response.currentStock,
@@ -1499,17 +1613,17 @@
                         jQuery('#product1s_' + row_id).attr('qtyappend', qty);
                     }
                 },
-                beforeSend: function () {
+                beforeSend: function() {
 
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
         });
 
         /*Price field should editable and editable price should change the Total-Amount (on-time editable price )*/
-        $('body').on('change', '.prices', function () {
+        $('body').on('change', '.prices', function() {
 
             var row_id = $(this).attr('row_id');
             var qty = $('.qty_' + row_id).val();
@@ -1527,7 +1641,7 @@
             }
         });
 
-        $('body').on('input', '.charge', function () {
+        $('body').on('input', '.charge', function() {
             var row_id = $(this).attr('row_id');
             var totalInput = parseFloat($('.total1_' + row_id).val()) || 0;
             var previousServiceCharge = parseFloat($(this).data('previous-service-charge')) || 0;
@@ -1547,7 +1661,7 @@
         });
 
 
-        $('body').on('keyup', '.kilometre', function () {
+        $('body').on('keyup', '.kilometre', function() {
 
             var valueIs = $(this).val();
             var rex = /^[0-9]*\d?(\.\d{1,2})?$/;
@@ -1571,7 +1685,7 @@
         //     }
         // });
 
-        $('body').on('change keyup', '.qtyt', function () {
+        $('body').on('change keyup', '.qtyt', function() {
             var row_id = $(this).attr('row_id1');
             var productid = $('.product1s_' + row_id).find(":selected").val();
             var qty = $(this).val();
@@ -1590,7 +1704,7 @@
                     productid: productid,
                     serviceCharge: serviceCharge
                 },
-                success: function (response) {
+                success: function(response) {
                     console.log('inside success function');
                     //var newd = $.trim(response);
                     if (response.success == '1') {
@@ -1614,10 +1728,10 @@
                         jQuery('#product1s_' + row_id).attr('qtyappend', qty);
                     }
                 },
-                beforeSend: function () {
+                beforeSend: function() {
 
                 },
-                error: function (e) {
+                error: function(e) {
 
                 }
             });
@@ -1645,7 +1759,7 @@
         var emailMsg2 = "{{ trans('message.Email Sent Successfully!') }}";
         var emailMsg3 = "{{ trans('message.OK') }}";
 
-        $('.initiateProcessBtn').click(function () {
+        $('.initiateProcessBtn').click(function() {
 
             var url = $(this).attr('url_init_process');
             var notifyCustomerValue = $('.notifyCustomerCheckbox').is(':checked');
@@ -1661,7 +1775,7 @@
                     serviceId: serviceId,
                     notifyCustomerValue: notifyCustomerValue
                 },
-                success: function (response) {
+                success: function(response) {
                     if (response == 1) {
                         swal({
                             title: emailMsg1,
@@ -1679,7 +1793,7 @@
                     $('.completeProcess').attr("url_complete_process",
                         "{{ url('/jobcard/complete_process_status') }}");
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
@@ -1687,7 +1801,7 @@
 
 
         //For Complete process time send mail to Customer and Admin
-        $('.completeProcess').click(function () {
+        $('.completeProcess').click(function() {
 
             var url = $(this).attr('url_complete_process');
             var notifyCustomerValue = $('.notifyCustomerCheckbox').is(':checked');
@@ -1704,7 +1818,7 @@
                     serviceId: serviceId,
                     notifyCustomerValue: notifyCustomerValue
                 },
-                success: function (response) {
+                success: function(response) {
                     if (response == 1) {
                         swal({
                             title: emailMsg1,
@@ -1719,13 +1833,13 @@
 
                     $('.completeProcessSpin').removeClass('glyphicon-refresh spinning');
                 },
-                error: function (e) {
+                error: function(e) {
                     console.log(e);
                 }
             });
         });
 
-        $('.clickAddNewButton').on('click', function () {
+        $('.clickAddNewButton').on('click', function() {
 
             $('.check_submit').prop("disabled", true);
             $('.closeButton').prop('disabled', false);
@@ -1734,11 +1848,11 @@
         /*Form submit at a time only single click*/
         $('.addJobcardSubmitButton').removeAttr('disabled'); //re-enable on document ready
 
-        $('.addJobcardForm').submit(function () {
+        $('.addJobcardForm').submit(function() {
             $('.addJobcardSubmitButton').attr('disabled', 'disabled'); //disable on any form submit
         });
 
-        $('.addJobcardForm').bind('invalid-form.validate', function () {
+        $('.addJobcardForm').bind('invalid-form.validate', function() {
             $('.addJobcardSubmitButton').removeAttr('disabled'); //re-enable on form invalidation
         });
     });

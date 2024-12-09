@@ -735,7 +735,7 @@ class JobCardcontroller extends Controller
 		<tr id="<?php echo $rowid; ?>">
 			<td>
 				<!-- Replace input with a select dropdown -->
-				<select name="other_service_name[]" class="form-control other_service_name" data-row-id="<?php echo $rowid; ?>">
+				<select  data-id="<?php echo $ids ?>" name="other_service_name[]" class="form-control other_service_name" data-row-id="<?php echo $rowid; ?>">
 					<option value="">Select a service</option>
 					<!-- Dynamically generate options for each product -->
 					<?php foreach ($products as $product) : ?>
@@ -762,7 +762,7 @@ class JobCardcontroller extends Controller
 
 
 			<td class="text-center">
-				<span class="trash_product" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
+				<span  class="trash_service" style="cursor: pointer;" data-id="<?php echo $ids; ?>">
 					<i class="fa fa-trash fa-2x" aria-hidden="true"></i>
 				</span>
 			</td>
@@ -786,7 +786,7 @@ class JobCardcontroller extends Controller
 			<td>
 				<!-- <input type="text" name="other_product[]" class="form-control" maxlength="50"> -->
 				<!-- Replace input with a select dropdown -->
-				<select name="other_product[]" class="form-control other_product" data-row-id="<?php echo $rowid; ?>">
+				<select data-id="<?php echo $ids ?>" name="other_product[]" class="form-control other_product" data-row-id="<?php echo $rowid; ?>">
 					<option value="">Select a product</option>
 					<!-- Dynamically generate options for each product -->
 					<?php foreach ($products as $product) : ?>
@@ -798,7 +798,7 @@ class JobCardcontroller extends Controller
 			</td>
 
 			<td>
-				<input type="text" name="other_price[]" class="form-control other_service_price" id="oth_price" value="<?php if (!empty($pros)) {
+				<input type="text" name="other_price[]" class="form-control other_price" id="oth_price" value="<?php if (!empty($pros)) {
 																															echo $product->total_price;
 																														} ?>" maxlength="8" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
 			</td>
