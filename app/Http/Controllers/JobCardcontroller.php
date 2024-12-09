@@ -565,6 +565,7 @@ class JobCardcontroller extends Controller
 	//jobcard store
 	public function store(Request $request)
 	{
+		
 		$job_no = $request->job_no;
 		$service_id = $request->service_id;
 		$assignTo = $request->AssigneTo;
@@ -660,6 +661,9 @@ class JobCardcontroller extends Controller
 				}
 			}
 		}
+		if (!empty($request->other_service_name)) {
+			$this->saveOtherService($request->other_service_name,$service_id,$job_no);
+		}
 
 		$tblcountjob = DB::table('tbl_jobcard_details')->where('jocard_no', '=', $job_no)->count();
 		if ($tblcountjob == 0) {
@@ -697,6 +701,27 @@ class JobCardcontroller extends Controller
 
 		return redirect('jobcard/list')->with('message', 'Jobcard Process Successfully');
 	}
+
+	private function saveOtherService($services, $service_id, $job_no)
+{
+    foreach ($services as $key => $value) {
+        $ser = $services[$key];
+        // $desc = $shortDesc[$key];
+        // $cyl = $cylinder[$key];
+        // $pri = $price[$key];
+
+        DB::table('tbl_jobcard_other_services')->insert([
+            'service_id' => $service_id,
+            'job_no' => $job_no,
+            'other_service_id' => $ser,
+            // 'short_description' => $desc,
+            // 'cylinder' => $cyl,           
+            // 'price' => $pri,              
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+    }
+}
 
 	// add products
 	public function addService(Request $request)
