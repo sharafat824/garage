@@ -570,6 +570,7 @@ Route::prefix('other/service')->group(function () {
 
 Route::get('/observation', 'JobCardcontroller@addobservation');
 Route::get('/jobcard/addproducts', 'JobCardcontroller@addproducts');
+Route::get('/jobcard/addService', 'JobCardcontroller@addService');
 Route::get('/jobcard/getprice', 'JobCardcontroller@getprice');
 Route::get('/jobcard/gettotalprice', 'JobCardcontroller@gettotalprice');
 
