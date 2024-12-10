@@ -71,10 +71,12 @@ class InvoiceController extends Controller
 			}
 		} else {
 			$invoice = Invoice::where([['type', '!=', 2], ['soft_delete', 0], ['branch_id', $adminCurrentBranch->branch_id]])->orderBy('id', 'DESC')->get();
+			//dd($invoice);
 
 			$updatekey = Updatekey::first();
 			$logo = Setting::first();
 		}
+		//dd($invoice);
 		// dd($invoice);
 		return view('invoice.list', compact('invoice', 'updatekey', 'logo'));
 	}

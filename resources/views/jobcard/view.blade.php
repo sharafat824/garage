@@ -1194,46 +1194,63 @@
         });
 
         let selectedProducts = [];
-        $(document).on('change', 'select[name="other_product[]"]', function() {
-            var $this = $(this); // Save a reference to the current element
-            var productId = $this.val();
-            var productDataId = $this.data('id');
-            var row = $this.closest('tr'); // Get the row of the current product
-            var priceField = row.find('.other_price'); // Find the price field in the current row
 
-            if (productId) {
-                $.ajax({
-                    url: '/jobcard/getprice', // Define the URL that will return the product price
-                    method: 'GET',
-                    data: {
-                        product_id: productId
-                    },
-                    success: function(response) {
-                        if (response[0]) { // Assuming response[0] contains the price
-                            var price = parseFloat(response[0]);
+$(document).on('change', 'select[name="other_product[]"]', function () {
+    var $this = $(this); // Save a reference to the current element
+    var productId = $this.val();
+    var productDataId = $this.data('id');
+    var row = $this.closest('tr'); // Get the row of the current product
+    var priceField = row.find('.other_price'); // Find the price field in the current row
+    var previousPrice = parseFloat(priceField.val()) || 0; // Get the current price in the field
 
-                            // Update the price field
-                            priceField.val(price);
+    if (productId) {
+        $.ajax({
+            url: '/jobcard/getprice', // Define the URL that will return the product price
+            method: 'GET',
+            data: {
+                product_id: productId
+            },
+            success: function (response) {
+                if (response[0]) { // Assuming response[0] contains the price
+                    var newPrice = parseFloat(response[0]);
 
-                            // Add product ID to selectedProducts if not already present
-                            if (!selectedProducts.includes(productDataId)) {
-                                selectedProducts.push(productDataId);
+                    // Update washbayCharge by removing the previous price and adding the new price
+                    var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+                    washbayCharge = washbayCharge - previousPrice + newPrice;
+                    $('#totalPrice').val(washbayCharge.toFixed(2));
 
-                                // Update washbayCharge by adding the price
-                                var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
-                                $('#totalPrice').val((price + washbayCharge).toFixed(2));
-                            }
+                    // Update the price field with the new price
+                    priceField.val(newPrice);
 
-                        } else {
-                            console.error('Price not fetched!');
-                        }
-                    },
-                    error: function() {
-                        console.error('Failed to fetch price.');
+                    // Update selectedProducts with the new productDataId if not already present
+                    if (!selectedProducts.includes(productDataId)) {
+                        selectedProducts.push(productDataId);
                     }
-                });
+
+                } else {
+                    console.error('Price not fetched!');
+                }
+            },
+            error: function () {
+                console.error('Failed to fetch price.');
             }
         });
+    } 
+    // else {
+    //     // If no product is selected, remove the previous price from the total
+    //     var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+    //     $('#totalPrice').val((washbayCharge - previousPrice).toFixed(2));
+
+    //     // Clear the price field
+    //     priceField.val('');
+
+    //     // Remove productDataId from selectedProducts
+    //     selectedProducts = selectedProducts.filter(function (id) {
+    //         return id !== productDataId;
+    //     });
+    // }
+});
+
 
 
         $('body').on('click', '.trash_product', function() {
@@ -1377,45 +1394,58 @@
             return false;
         });
 
+        // Handle service selection
         let selectedServices = [];
 
-        // Handle service selection
-        $(document).on('change', 'select[name="other_service_name[]"]', function() {
-            var $this = $(this); // Save a reference to the current element
-            var serviceId = $this.val(); // Selected service ID
-            var row = $this.closest('tr'); // Current row
-            var priceField = row.find('.other_service_price');
-            var shortDesc = row.find('.other_short_desc');
-            var cylinder = row.find('.other_service_cylinder');
-            var rowId = $this.data('id'); // Unique row ID for the service
-            var priceField = row.find('.other_service_price');
+$(document).on('change', 'select[name="other_service_name[]"]', function () {
+    var $this = $(this); // Save a reference to the current element
+    var serviceId = $this.val(); // Selected service ID
+    var row = $this.closest('tr'); // Current row
+    var priceField = row.find('.other_service_price');
+    var shortDesc = row.find('.other_short_desc');
+    var cylinder = row.find('.other_service_cylinder');
+    var rowId = $this.data('id'); // Unique row ID for the service
+    var previousPrice = parseFloat(priceField.val()) || 0; // Get the current price in the field
 
-            if (serviceId) {
-                $.ajax({
-                    url: '/service/price/' + serviceId,
-                    method: 'GET',
-                    data: {
-                        id: serviceId
-                    },
-                    success: function(response) {
-                        shortDesc.val(response.short_description);
-                        cylinder.val(response.cylinder);
-                        priceField.val(response.price);
+    if (serviceId) {
+        $.ajax({
+            url: '/service/price/' + serviceId,
+            method: 'GET',
+            data: {
+                id: serviceId
+            },
+            success: function (response) {
+                if (response.price) {
+                    var newPrice = parseFloat(response.price);
 
-                        // Add to selectedServices if not already present
-                        if (!selectedServices.includes(rowId)) {
-                            selectedServices.push(rowId);
-                            var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
-                            $('#totalPrice').val((response.price + washbayCharge).toFixed(2));
-                        }
+                    // Update washbayCharge by subtracting the previous price and adding the new price
+                    var washbayCharge = parseFloat($('#totalPrice').val()) || 0;
+                    washbayCharge = washbayCharge - previousPrice + newPrice;
+                    $('#totalPrice').val(washbayCharge.toFixed(2));
 
-                    },
-                    error: function() {
-                        console.error('Failed to fetch service details.');
+                    // Update the price field with the new price
+                    priceField.val(newPrice);
+
+                    // Update other fields
+                    shortDesc.val(response.short_description);
+                    cylinder.val(response.cylinder);
+
+                    // Add service ID to selectedServices if not already present
+                    if (!selectedServices.includes(rowId)) {
+                        selectedServices.push(rowId);
                     }
-                });
-            } 
+                } else {
+                    console.error('Price not fetched!');
+                }
+            },
+            error: function () {
+                console.error('Failed to fetch service details.');
+            }
         });
+    } 
+     console.log('Updated Selected Services:', selectedServices);
+});
+
 
         $('body').on('keyup', '.qty', function() {
 
